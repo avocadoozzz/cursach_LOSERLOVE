@@ -1,0 +1,297 @@
+
+body {
+position: relative;
+width: 768px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+background: rgb(242, 242, 246);
+}
+/* Заголовок сайта */
+.header {
+    position: static;
+    width: 768px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.590000033378601;
+    padding: 4.8px 40px 0px 40px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+background: linear-gradient(176.08deg, rgb(15, 84, 75) 105.247%,rgb(88, 50, 226) 105.247%);
+}
+
+.header h1 {
+    position: static;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.header p {
+    position: static;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 251.33px 0px 251.33px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.header-icons .Language {
+    position: static;
+width: 20px;
+height: 12px;
+flex: none;
+order: undefined;
+flex-grow: 0;
+margin: 1.590000033378601px 0px;
+background: url();
+}
+.header-icons .Language2 {
+    position: static;
+    width: 9px;
+    height: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    flex: none;
+    order: undefined;
+    flex-grow: 0;
+    margin: 1.590000033378601px 0px;
+    opacity: 0.8;
+}
+.header-icons .UserProfile {
+    position: static;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    flex: none;
+    order: undefined;
+    flex-grow: 0;
+    margin: 1.590000033378601px 0px;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+}
+
+/* Карточка изображения заведения */
+.main-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Описание заведения */
+.description {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.description h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #555;
+}
+
+/* Кнопка бронирования */
+.book-now {
+    display: inline-block;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.book-now:hover {
+    background: linear-gradient(to right, #9333ea, #3b82f6);
+}
+
+/* Секция мест и мастеров */
+.places, .services, .reviews {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.places h3, .services h3, .reviews h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.place-item {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 2.5%;
+    text-align: center;
+}
+
+.place-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.place-item p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Секция с картой */
+.map {
+    text-align: center;
+}
+
+.view-map {
+    background: #e5e7eb;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.view-map:hover {
+    background: #d1d5db;
+}
+
+/* Услуги */
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item p {
+    margin: 0;
+}
+
+.service-item .price, .service-item .time {
+    font-weight: bold;
+    color: #333;
+}
+
+.service-item .book-now {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+/* Отзывы */
+.reviews .review-list {
+    list-style-type: none;
+}
+
+.review-item {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px 0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-item p {
+    margin: 5px 0;
+}
+
+.rating-stars {
+    color: #ffcd3c;
+}
+
+/* Кнопка показать больше отзывов */
+.show-more {
+    display: inline-block;
+    background: #e5e7eb;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.show-more:hover {
+    background: #d1d5db;
+}
+
+/* Кнопки оставить отзыв и пожаловаться */
+.feedback-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.feedback-buttons .leave-feedback, .feedback-buttons .complain {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #3b82f6;
+    transition: color 0.3s;
+}
+
+.feedback-buttons .leave-feedback:hover, .feedback-buttons .complain:hover {
+    color: #9333ea;
+}
