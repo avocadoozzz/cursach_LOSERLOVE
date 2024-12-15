@@ -1,7 +1,6 @@
 
 body {
 position: relative;
-width: 768px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -12,7 +11,7 @@ background: rgb(242, 242, 246);
 /* Заголовок сайта */
 .header {
     position: static;
-    width: 768px;
+    width: 1440px;
     height: 58px;
     display: flex;
     flex-direction: column;
@@ -67,7 +66,13 @@ background: linear-gradient(176.08deg, rgb(15, 84, 75) 105.247%,rgb(88, 50, 226)
     letter-spacing: 0%;
     text-align: center;
 }
-
+.header-icons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #ffffff;
+}
 .header-icons .Language {
     position: static;
 width: 20px;
@@ -145,7 +150,7 @@ background: url();
 /* Кнопка бронирования */
 .book-now {
     display: inline-block;
-    background: linear-gradient(to right, #3b82f6, #9333ea);
+    background: linear-gradient(176.08deg, rgb(15, 84, 75) 105.247%,rgb(88, 50, 226) 105.247%);
     color: #fff;
     padding: 10px 20px;
     font-size: 1rem;
@@ -157,7 +162,7 @@ background: url();
 }
 
 .book-now:hover {
-    background: linear-gradient(to right, #9333ea, #3b82f6);
+    background: linear-gradient(176.08deg, rgb(15, 84, 75) 105.247%,rgb(88, 50, 226) 105.247%);
 }
 
 /* Секция мест и мастеров */
