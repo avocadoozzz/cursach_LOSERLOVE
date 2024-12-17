@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import { login } from "../../../api/auth/authApi";
-import "./login.css";
+import { useAuth } from "../../../context/AuthContext";  // Импортируем хук для использования контекста
+import "./auth.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const { setIsLoggedIn } = useAuth();  // Используем setIsLoggedIn для обновления состояния авторизации
 
   useEffect(() => {
     window.history.pushState(null, document.title, window.location.href);
@@ -43,6 +45,9 @@ const Login = () => {
         secure: true,
         sameSite: "Strict",
       });
+
+      // Обновляем состояние авторизации
+      setIsLoggedIn(true);
 
       if (user.role === "client") {
         navigate("/client");
@@ -93,7 +98,7 @@ const Login = () => {
           First time ordering with us? Create a new account, it's quick and
           simple
         </p>
-        <a href="/registration">Create a new account</a>
+        <a href="/register">Create a new account</a>
       </div>
     </div>
   );

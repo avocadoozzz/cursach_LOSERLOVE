@@ -2,7 +2,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url('../public/data/images/layoutBody.png'); 
+    /*background-image: url('../public/data/images/layoutBody.png'); */
     font-family: "Pixelify Sans", sans-serif;
     
   }
