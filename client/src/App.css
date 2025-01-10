@@ -1,4 +1,7 @@
-.App {
+html{
+width: 1920px;
+}
+/* .App { 
   text-align: center;
 }
 .App-logo {
@@ -30,4 +33,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/

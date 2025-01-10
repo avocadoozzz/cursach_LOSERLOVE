@@ -1,0 +1,47 @@
+.reviews {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .reviews h3 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .rating {
+    font-size: 1rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .review-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .review-item h4 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .review-item p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .show-more {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .show-more:hover {
+    background-color: #5a6268;
+  }
+  

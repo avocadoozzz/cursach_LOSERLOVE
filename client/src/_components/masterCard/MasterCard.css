@@ -1,0 +1,31 @@
+.master-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .master-card h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .master-info {
+    margin-top: 10px;
+  }
+  
+  .master-button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .master-button:hover {
+    background-color: #218838;
+  }
+  

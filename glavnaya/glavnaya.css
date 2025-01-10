@@ -1,4 +1,4 @@
-
+/*
 body {
 position: relative;
 display: flex;
@@ -8,7 +8,7 @@ align-items: center;
 padding: 0px;
 background: rgb(242, 242, 246);
 }
-/* Заголовок сайта */
+/* Заголовок сайта 
 .header {
     position: static;
     width: 1440px;
@@ -115,7 +115,7 @@ background: url();
     background: rgb(255, 255, 255);
 }
 
-/* Карточка изображения заведения */
+/* Карточка изображения заведения 
 .main-image {
     display: flex;
     justify-content: center;
@@ -129,7 +129,7 @@ background: url();
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Описание заведения */
+/* Описание заведения 
 .description {
     background-color: #fff;
     border-radius: 8px;
@@ -147,7 +147,7 @@ background: url();
     color: #555;
 }
 
-/* Кнопка бронирования */
+/* Кнопка бронирования 
 .book-now {
     display: inline-block;
     background: linear-gradient(176.08deg, rgb(15, 84, 75) 105.247%,rgb(88, 50, 226) 105.247%);
@@ -165,7 +165,7 @@ background: url();
     background: linear-gradient(176.08deg, rgb(15, 84, 75) 105.247%,rgb(88, 50, 226) 105.247%);
 }
 
-/* Секция мест и мастеров */
+/* Секция мест и мастеров 
 .places, .services, .reviews {
     background-color: #fff;
     border-radius: 8px;
@@ -198,7 +198,7 @@ background: url();
     color: #333;
 }
 
-/* Секция с картой */
+/* Секция с картой 
 .map {
     text-align: center;
 }
@@ -216,7 +216,7 @@ background: url();
     background: #d1d5db;
 }
 
-/* Услуги */
+/* Услуги 
 .service-item {
     display: flex;
     justify-content: space-between;
@@ -242,7 +242,7 @@ background: url();
     font-size: 0.9rem;
 }
 
-/* Отзывы */
+/* Отзывы 
 .reviews .review-list {
     list-style-type: none;
 }
@@ -264,7 +264,7 @@ background: url();
     color: #ffcd3c;
 }
 
-/* Кнопка показать больше отзывов */
+/* Кнопка показать больше отзывов 
 .show-more {
     display: inline-block;
     background: #e5e7eb;
@@ -282,7 +282,7 @@ background: url();
     background: #d1d5db;
 }
 
-/* Кнопки оставить отзыв и пожаловаться */
+/* Кнопки оставить отзыв и пожаловаться 
 .feedback-buttons {
     display: flex;
     justify-content: space-between;

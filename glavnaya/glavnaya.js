@@ -1,4 +1,4 @@
-
+/*
 // Book Now buttons functionality
 document.querySelectorAll('.book-now').forEach(button => {
     button.addEventListener('click', () => {
@@ -76,3 +76,4 @@ document.querySelector('.leave-feedback').addEventListener('click', () => {
 document.querySelector('.complain').addEventListener('click', () => {
     alert("Thank you! Your complaint has been submitted.");
 });
+*/
