@@ -26,7 +26,7 @@ const App = () => {
     <MapButton/>
     <ServicesList/>
     <Routes>
-        <Route path="/" element={<Home />} />
+      
         <Route path="/services" element={<Services />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/masters" element={<Masters />} />

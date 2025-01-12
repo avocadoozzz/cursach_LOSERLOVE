@@ -10,17 +10,48 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <div className="reviews">
-      <h3>Отзывы</h3>
-      <div className="rating">⭐ 5.0 | 90 Оценок</div>
-      {reviews.map((review, index) => (
-        <div key={index} className="review-item">
-          <h4>{review.name}</h4>
-          <p>{review.date}</p>
-          <p>{review.text}</p>
+    <div className="rect">  
+    <div className="reviews-container">
+      <div className="reviews-header">
+        <h3>Отзывы</h3>
+        <div className="header-buttons">
+          <button className="leave-review">Оставить отзыв</button>
+          <button className="report">Пожаловаться</button>
         </div>
-      ))}
+      </div>
+      <div className="rating-section">
+        <span className="rating">⭐ 5.0 Рейтинг</span>
+        <span className="total-reviews">90 Оценок</span>
+        <div className="rating-bars">
+          <div className="rating-bar">
+            <div className="bar-fill" style={{ width: '100%' }}></div>
+          </div>
+          <div className="rating-bar">
+            <div className="bar-fill" style={{ width: '0%' }}></div>
+          </div>
+          <div className="rating-bar">
+            <div className="bar-fill" style={{ width: '0%' }}></div>
+          </div>
+          <div className="rating-bar">
+            <div className="bar-fill" style={{ width: '0%' }}></div>
+          </div>
+          <div className="rating-bar">
+            <div className="bar-fill" style={{ width: '0%' }}></div>
+          </div>
+        </div>
+      </div>
+      <div className="reviews-list">
+        {reviews.map((review, index) => (
+          <div key={index} className="review-item">
+            <h4>{review.name}</h4>
+            <p className="review-date">{review.date}</p>
+            <p className="review-text">{review.text}</p>
+            <button className="same-review">Хочу так же</button>
+          </div>
+        ))}
+      </div>
       <button className="show-more">Показать ещё</button>
+    </div>
     </div>
   );
 };

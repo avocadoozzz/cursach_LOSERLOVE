@@ -12,9 +12,7 @@ background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%,rgb(33, 142, 126) 100%)
 .div #root{
   width: 1920px;
 }
-.html{
-  width: 1920px;
-}
+
 
 .nr-block {
   display: flex;
@@ -32,9 +30,7 @@ background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%,rgb(33, 142, 126) 100%)
 
 .nr-block .nr-title {
   position: absolute;
-  width: 170.13px;
   height: 30.76px;
-  left: 37.67%;
   right: 47.69%;
   top: 0.42%;
   bottom: 99.08%;
@@ -45,8 +41,7 @@ background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%,rgb(33, 142, 126) 100%)
   position: absolute;
   width: 300.13px;
   height: 30.76px;
-  left: 27.67%;
-  right: 47.69%;
+  right: 43.09%;
   top: 45.42%;
   bottom: 99.08%;
   font-size: 1.5rem;
