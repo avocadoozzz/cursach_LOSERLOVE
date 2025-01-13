@@ -77,10 +77,10 @@
     width: 860px;
     height: 750px;
     left: 2.55%;
-    top: 47.03%;
+    top: 61.53%;
     border-radius: 25px;
     background-color: #fff;
-  }
+}
   
   .reviews-header {
     display: flex;
@@ -179,5 +179,6 @@ background: rgba(0, 0, 0, 0);
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    z-index: 1;
 }
   

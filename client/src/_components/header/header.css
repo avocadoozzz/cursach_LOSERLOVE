@@ -12,7 +12,42 @@ background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%,rgb(33, 142, 126) 100%)
 .div #root{
   width: 1920px;
 }
-
+.account-modal {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  border: 1px solid rgb(225, 234, 245);
+  border-radius: 11.5px;
+  background: white;
+  left: 750px;
+  top: 100px;
+  z-index: 2;
+}
+.account-modal h3{
+  left: 140px;
+  position: relative;
+  font-size: 36px;
+  width: 400px;
+  z-index: 3;
+  top: 40px;
+}
+ .account-modal1 {
+  left: 70px;
+  position: relative;
+  font-size: 28px;
+  top: 70px;
+  background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+  z-index: 3;
+  color:#fff;
+}
+.account-modal2 {
+  left: 170px;
+  position: relative;
+  font-size: 28px;
+  top: 70px;
+  background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+  color:#fff;
+}
 
 .nr-block {
   display: flex;

@@ -62,14 +62,11 @@ const Header = () => {
       {/* Модальное окно для аккаунта */}
       {openAccountModal && (
         <div className="account-modal">
-          <h3>Выберите действие</h3>
-          <button onClick={() => handleAccountAction("register")}>Зарегистрироваться</button>
-          <button onClick={() => handleAccountAction("login")}>Войти</button>
+          <h3>Выберите действие :</h3>
+          <button onClick={() => handleAccountAction("register")} className="account-modal1">Зарегистрироваться</button>
+          <button onClick={() => handleAccountAction("login")} className="account-modal2">Войти</button>
         </div>
       )}
-
-      {/* Ваши другие модальные окна */}
-      {/* <MapModal open={openModal} onClose={handleToggleModal} /> */}
     </div>
   );
 };

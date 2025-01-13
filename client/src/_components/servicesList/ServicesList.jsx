@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom"; // Импорт useNavigate для перехода
 import "./ServicesList.css";
 
 const services = [
@@ -10,60 +11,26 @@ const services = [
 ];
 
 const ServicesList = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [redirect, setRedirect] = useState(null);
+  const navigate = useNavigate(); // Хук для навигации
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
-  const handleRedirect = (action) => {
-    setRedirect(action);
-    closeModal();
+  const handleServicesClick = () => {
+    navigate("/services"); // Переход на страницу Services
   };
-
-  if (redirect === "register") {
-    window.location.href = "/register"; // Страница регистрации
-    return null;
-  }
-
-  if (redirect === "login") {
-    window.location.href = "/login"; // Страница авторизации
-    return null;
-  }
 
   return (
     <div className="rect">
-    <div className="services-list">
-      <h3>Услуги</h3>
-      {services.map((service, index) => (
-        <div key={index} className="service-item">
-          <p>{service.name}</p>
-          <p>
-            {service.price} | {service.time}
-          </p>
-          <button onClick={openModal}>Записаться</button>
-        </div>
-      ))}
-
-      {isModalOpen && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={closeModal}>
-              ✖
-            </button>
-            <h2>Выберите действие</h2>
-            <div className="modal-buttons">
-              <button onClick={() => handleRedirect("register")}>
-                Зарегистрироваться
-              </button>
-              <button onClick={() => handleRedirect("login")}>
-                Войти
-              </button>
-            </div>
+      <div className="services-list">
+        <h3>Услуги</h3>
+        {services.map((service, index) => (
+          <div key={index} className="service-item">
+            <p>{service.name}</p>
+            <p>
+              {service.price} | {service.time}
+            </p>
+            <button onClick={handleServicesClick}>Записаться</button>
           </div>
-        </div>
-      )}
-    </div>
+        ))}
+      </div>
     </div>
   );
 };

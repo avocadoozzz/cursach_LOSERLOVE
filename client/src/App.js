@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Home from './assets/pages/Home/Home.jsx';
+//import Home from './assets/pages/Home/Home.jsx';
 import Services from './assets/pages/Services/Services.jsx';
 import Booking from './assets/pages/Booking/Booking.jsx';
 import Masters from './assets/pages/Masters/Masters.jsx';
@@ -14,6 +14,7 @@ import InfoBlock from './_components/infoBlock/InfoBlock.jsx';
 import Review from './_components/review/Review.jsx';
 import MapButton from './_components/mapButton/MapButton.jsx';
 import ServicesList from './_components/servicesList/ServicesList.jsx';
+import MasterCard from './_components/masterCard/MasterCard.jsx';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,6 +26,7 @@ const App = () => {
     <Review/>
     <MapButton/>
     <ServicesList/>
+    <MasterCard/>
     <Routes>
       
         <Route path="/services" element={<Services />} />

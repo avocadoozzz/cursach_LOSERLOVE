@@ -3,7 +3,7 @@
   width: 900px;
   height: 300px;
   left: 2.55%;
-  top: 31.52%;
+  top: 45.82%;
   background: rgb(255, 255, 255);
   border-radius: 25px;
 }
@@ -104,6 +104,8 @@ bottom: 7.64%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
   }
   
   .service-item button:hover {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom"; // Импорт useNavigate
 import './Review.css';
 
 const reviews = [
@@ -9,6 +10,12 @@ const reviews = [
 ];
 
 const Reviews = () => {
+  const navigate = useNavigate(); // Хук для навигации
+
+  const handleShowMoreClick = () => {
+    navigate("/reviews"); // Переход на страницу Reviews
+  };
+
   return (
     <div className="rect">  
     <div className="reviews-container">
@@ -50,7 +57,7 @@ const Reviews = () => {
           </div>
         ))}
       </div>
-      <button className="show-more">Показать ещё</button>
+      <button className="show-more" onClick={handleShowMoreClick}>Показать ещё</button>
     </div>
     </div>
   );
