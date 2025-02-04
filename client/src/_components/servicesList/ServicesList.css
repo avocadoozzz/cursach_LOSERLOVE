@@ -3,20 +3,71 @@
   width: 900px;
   height: 300px;
   left: 2.55%;
-  top: 45.82%;
+  top: 950px;
   background: rgb(255, 255, 255);
   border-radius: 25px;
 }
- .rect{
-  margin-bottom: 20px; 
-  position: absolute;
-width: 940px;
-height: 2081.4px;
-left: 25.51%;
-right: 25.56%;
-top: 4.76%;
-bottom: 7.64%;
+@media (max-width: 1920px) {
+  .rect {
+    margin-bottom: 20px;
+    width:940px;
+    height: 100%;
+    left: 25.51%;
+    position: relative;
+    top: 50px;
+  }
+  }
+  @media (max-width: 940px) {
+    .rect {
+      margin-bottom: 20px;
+      width: 100%;
+      height: 100%;
+      left: 25.51%;
+      position: relative;
+      top: 50px;
+    }
+    }
+    @media (max-width: 1491px) {
+      .rect {
+          margin-bottom: 20px;
+          width: 940px;
+          height: 100%;
+          left: 130px;
+          position: relative;
+          top: 50px;
+      }
+  }
+  @media (max-width: 1150px) {
+    .rect {
+        margin-bottom: 20px;
+        width: 940px;
+        height: 100%;
+        left: 70px;
+        position: relative;
+        top: 50px;
+    }
 }
+@media (max-width: 1053px) {
+  .rect {
+      margin-bottom: 20px;
+      width: 940px;
+      height: 100%;
+      left: 0px;
+      position: relative;
+      top: 50px;
+  }
+}
+@media (max-width: 940px) {
+  .rect {
+      margin-bottom: 20px;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      position: relative;
+      top: 50px;
+  }
+}
+
  .modal-overlay {
   position: fixed;
   top: 0;
@@ -91,7 +142,11 @@ bottom: 7.64%;
   padding: 10px 0;
   border-bottom: 1px solid #eee;
 }
-  
+.service-item h1 {
+  margin: 0;
+  color: #555;
+  font-size: 1em;
+}
   .service-item p {
     margin: 0;
     color: #555;
@@ -112,3 +167,55 @@ bottom: 7.64%;
     background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
   }
   
+
+  @media (max-width: 900px) and (min-width: 768px) {
+    .rect {
+      margin-bottom: 20px;
+      width: 100%;
+      left: 0%;
+      top: 4.76%;
+  }
+    .services-list {
+      position: absolute;
+      width: 727.28px;
+      height: 600px;
+      top: 1475px;
+      background: rgb(255, 255, 255);
+      border-radius: 25px;
+  }
+  .service-item {
+    top: 50px;
+    position: relative;
+    left: 19px;
+    width: 700.28px;
+    display: flex;
+    flex-direction: column; /* Изменяем направление на столбец */
+    align-items: flex-start; /* Выровнять элементы по левому краю */  
+    padding: 30px 0;
+    height: 30px;
+}
+.services-list p {
+  margin: 10px;
+  color: #555;
+}
+.service-item h1 {
+  margin: 0 0 5px 0; 
+  color: #555;
+  font-size: 1em;
+  left: 50px;
+  position: relative;
+}
+.service-item button {
+  padding: 5px 10px;
+  background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  top: -35px;
+  left: 570px;
+}
+
+  }

@@ -1,22 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import Header from '../../../_components/header/header.jsx'
+import InfoBlock from '../../../_components/infoBlock/InfoBlock.jsx'
+import MapButton from '../../../_components/mapButton/MapButton.jsx'
+import MasterCard from '../../../_components/masterCard/MasterCard.jsx'
+import Review from '../../../_components/review/Review.jsx'
+import ServicesList from '../../../_components/servicesList/ServicesList.jsx'
 
-const Home = () => {
-  return (
-    <div>
-      <header>
-        <h1>LASER LOVE</h1>
-        <p>Могилев, ул. Турова, д. 16</p>
-      </header>
-      <nav>
-        <Link to="/services">Услуги</Link>
-        <Link to="/login">Войти</Link>
-      </nav>
-      <main>
-        <p>Добро пожаловать в студию эпиляции LASER LOVE!</p>
-      </main>
-    </div>
-  );
-};
-
-export default Home;
+export default function RegistrationPage(){
+    return(
+        <main>
+            <Header/>
+            <InfoBlock/>
+            <MapButton/>
+            <MasterCard/>
+            <Review/>
+            <ServicesList/>
+        </main>
+    )
+}

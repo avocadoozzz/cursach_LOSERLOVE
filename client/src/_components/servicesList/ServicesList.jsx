@@ -23,7 +23,7 @@ const ServicesList = () => {
         <h3>Услуги</h3>
         {services.map((service, index) => (
           <div key={index} className="service-item">
-            <p>{service.name}</p>
+            <h1>{service.name}</h1>
             <p>
               {service.price} | {service.time}
             </p>

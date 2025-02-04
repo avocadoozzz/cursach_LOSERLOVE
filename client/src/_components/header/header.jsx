@@ -4,7 +4,7 @@ import { IconButton } from "@mui/material";
 import langIcon from '../../assets/img/header/lang.png';
 import razlogIcon from '../../assets/img/header/razlog.png';
 import accountIcon from '../../assets/img/header/account.png';
-
+//import auth from '../auth/auth.jsx';
 import "./header.css";
 
 const Header = () => {
@@ -27,8 +27,8 @@ const Header = () => {
     // Навигация для регистрации или входа
     if (action === "register") {
       navigate("/register");
-    } else if (action === "login") {
-      navigate("/login");
+    } else if (action === "auth") {
+      navigate("../auth");
     }
     setOpenAccountModal(false); // Закрыть модальное окно после выбора действия
   };
@@ -62,9 +62,12 @@ const Header = () => {
       {/* Модальное окно для аккаунта */}
       {openAccountModal && (
         <div className="account-modal">
+        <button className="close-button" onClick={handleToggleAccountModal}>
+            &times;
+          </button>
           <h3>Выберите действие :</h3>
           <button onClick={() => handleAccountAction("register")} className="account-modal1">Зарегистрироваться</button>
-          <button onClick={() => handleAccountAction("login")} className="account-modal2">Войти</button>
+          <button onClick={() => handleAccountAction("auth")} className="account-modal2">Войти</button>
         </div>
       )}
     </div>
