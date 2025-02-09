@@ -1,0 +1,205 @@
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .booking-title {
+    position: absolute;
+    width: 190.16px;
+    height: 14.47px;
+    left: 7.11%;
+    right: 74.99%;
+    top: 3.34%;
+    font-size: 26px;
+}
+.booking {
+    position: absolute;
+    width: 460px;
+    height: 200px;
+    padding: 10px 20px;
+    top: 5%;
+    left: 5%;
+}
+  .booking-links {
+    position: absolute;
+    width: 206.66px;
+    height: 172.21px;
+    left: 6.88%;
+    right: 66.72%;
+    top: 15%;
+    bottom: 80.39%;
+    border-radius: 20px;
+    background: rgb(8, 85, 65);
+  }
+  
+  .booking-links1 {
+    position: absolute;
+    width: 206.66px;
+    height: 172.21px;
+    left: 52.83%;
+    right: 37.78%;
+    top: 15%;
+    bottom: 80.39%;
+    border-radius: 20px;
+    background: rgb(8, 85, 65);
+  }
+
+  .booking-link {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s;
+    width: 100px;
+    bottom: -45px;
+    position: relative;
+}
+  
+  .booking-link:hover {
+    background-color: #00ffa6;
+  }
+
+  @media (max-width: 1441px){
+    .booking-title {
+        position: absolute;
+        width: 190.16px;
+        height: 14.47px;
+        left: 7.11%;
+        right: 74.99%;
+        top: 7.34%;
+        font-size: 26px;
+    }
+    .booking {
+        position: absolute;
+        width: 460px;
+        height: 200px;
+        padding: 10px 20px;
+        top: 10%;
+        left: 5%;
+    }
+  }
+
+@media (max-width: 769px){
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .booking-title {
+    position: absolute;
+    width: 190.16px;
+    height: 14.47px;
+    left: 7.11%;
+    right: 74.99%;
+    top: 7.34%;
+    bottom: 92.71%;
+    font-size: 26px;
+}
+.booking {
+    position: absolute;
+    width: 460px;
+    height: 200px;
+    padding: 10px 20px;
+    top: 10%;
+    left: 4%;
+}
+  .booking-links {
+    position: absolute;
+    width: 206.66px;
+    height: 172.21px;
+    left: 6.88%;
+    right: 66.72%;
+    top: 15%;
+    bottom: 80.39%;
+    border-radius: 20px;
+    background: rgb(8, 85, 65);
+  }
+  
+  .booking-links1 {
+    position: absolute;
+    width: 206.66px;
+    height: 172.21px;
+    left: 52.83%;
+    right: 37.78%;
+    top: 15%;
+    bottom: 80.39%;
+    border-radius: 20px;
+    background: rgb(8, 85, 65);
+  }
+
+  .booking-link {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s;
+    width: 100px;
+    bottom: -45px;
+    position: relative;
+}
+  
+  .booking-link:hover {
+    background-color: #00ffa6;
+  }
+}
+@media (max-width: 561px) {
+    .booking {
+      position: absolute;
+      width: 80%;
+      height: 200px;
+      padding: 10px 20px;
+      top: 10%;
+      left: 2%;
+  }
+  .booking-links {
+    position: absolute;
+    width: 42%;
+    height: 172.21px;
+    left: 6.88%;
+    right: 66.72%;
+    top: 15%;
+    bottom: 80.39%;
+    border-radius: 20px;
+    background: rgb(8, 85, 65);
+  }
+  .booking-links1 {
+    position: absolute;
+    width: 42%;
+    height: 172.21px;
+    left: 52.83%;
+    right: 37.78%;
+    top: 15%;
+    bottom: 80.39%;
+    border-radius: 20px;
+    background: rgb(8, 85, 65);
+  }
+  }
+@media (max-width: 336px){
+.booking-link {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s;
+    width: 60%;
+    bottom: -45px;
+    position: relative;
+  }
+}

@@ -1,0 +1,505 @@
+.menu-button12 {
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    left: -90px;
+    position: relative;
+    top: -10px;
+}
+.nr-lang-menu1 {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row; /* Изменяем направление на горизонтальное */
+    /*gap: 15px; /* Отступы между иконками */
+    align-items: center; /* Выравнивание по центру */
+    justify-content: center;
+ }
+ .nr-lang-menu1 .MuiIconButton-root {
+    width: 60px;
+    top: -35.42%;
+    left: 40px;
+}
+  .burger-menu1 {
+    display: block; /* Показываем бургер-меню */
+  }
+ 
+  .menu-button11 {
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    left: -90px;
+    position: relative;
+    top: 20px;
+  }
+  .menu-button22 {
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    left: -90px;
+    position: relative;
+    top: 50px;
+  }
+  .menu-button33 {
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    left: -90px;
+    position: relative;
+    top: 80px;
+  }
+  .menu-button1:hover {
+    background-color: #ddd;
+  }
+
+
+  .burger-menu1 button {
+    left: -180%;
+    top: -15px;
+}
+.burger-icon1 {
+    font-size: 24px;
+    cursor: pointer;
+    top: 1px;
+    position: relative;
+    left: 10%;
+}
+.btn-open-menu1 img {
+    width: 35px;
+    height: 35px;
+  }
+
+
+/* Бургер-меню */
+.burger-menu1 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.burger-icon1 {
+    font-size: 24px;
+    cursor: pointer;
+    top: -10px;
+    position: relative;
+    left: -300%;
+}
+
+/* Мобильное меню */
+.nr-lang-menu1 {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка закрытия */
+.close-button1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+  .nr-header {
+    position: absolute;
+  width: 100%;
+  height: 52px;
+  left: 0%;
+  right: 0.05%;
+  top: 0%;
+  bottom: 0.81%;
+  background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%,rgb(33, 142, 126) 100%);
+  }
+  .masters-container {
+    position: relative;
+    width: 100%;
+    top: 30px;
+    height: 400px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    left: 9%;
+    position: relative;
+    z-index: 1;
+    top: 5px;
+}
+.search-text{
+    margin-right: 10px;
+    left: 9%;
+    position: relative;
+    z-index: 1;
+    top: 1px;
+}
+.masters-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    top: 1px;
+    position: relative;
+    color: white;
+    left: 300px;
+    width: 170px;
+}
+  
+.masters-search {
+    position: relative;
+    width: 80%;
+    height: 40px;
+    left: -4.03%;
+    top: 1.76%;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    border-color: white;
+}
+  
+.masters-selected {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    width: 30%;
+    left: 40%;
+    position: relative;
+}
+  
+  .masters-list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .master-card {
+    position: absolute;
+    width: 80%;
+    height: 80px;
+    left: 6.88%;
+    right: 8.83%;
+    top: 30.52%;
+    bottom: 83.27%;
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+}
+  
+  .master-name {
+    font-size: 1.2rem;
+    left: 120px;
+        position: relative;
+        width: 20%;
+  }
+  .master-name1 {
+    font-size: 1.2rem;
+    left: 120px;
+        position: relative;
+        top: -15px;
+        width: 20%;
+  }
+
+  .select-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.3s;
+    top: -80px;
+    position: relative;
+}
+  
+  .select-button.selected {
+    background: #066545;
+    color: #fff;
+  }
+  .account-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    left: 20%;
+    position: relative;
+    z-index: 1;
+    top: 35px;
+    border-radius: 100%;
+}
+
+/* Кнопка с фоновым изображением */
+.btn-open-menu1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-open-menu1 img {
+    position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 35.71%;
+  right: 35.71%;
+  top: 43.21%;
+  bottom: -43.21%;
+  background: rgb(255, 255, 255);
+    border-radius: 50%; /* Круглая кнопка */
+    border: 2px solid #fff; /* Обводка */
+  }
+  
+  .btn-open-menu1:hover {
+    transform: scale(1.1); /* Лёгкое увеличение при наведении */
+  }
+  .close-button1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+}
+  
+
+  @media (max-width: 769px) {
+    .menu-button12 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: -10px;
+    }
+    .nr-lang-menu1 {
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row; /* Изменяем направление на горизонтальное */
+        /*gap: 15px; /* Отступы между иконками */
+        align-items: center; /* Выравнивание по центру */
+        justify-content: center;
+     }
+     .nr-lang-menu1 .MuiIconButton-root {
+        width: 60px;
+        top: -35.42%;
+        left: 40px;
+    }
+      .burger-menu1 {
+        display: block; /* Показываем бургер-меню */
+      }
+     
+      .menu-button11 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: 20px;
+      }
+      .menu-button22 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: 50px;
+      }
+      .menu-button33 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: 80px;
+      }
+      .menu-button1:hover {
+        background-color: #ddd;
+      }
+
+
+      .burger-menu1 button {
+        left: -180%;
+        top: -15px;
+    }
+    .burger-icon1 {
+        font-size: 24px;
+        cursor: pointer;
+        top: 1px;
+        position: relative;
+        left: 10%;
+    }
+    .btn-open-menu1 img {
+        width: 35px;
+        height: 35px;
+      }
+
+   
+    .search-text{
+        margin-right: 10px;
+        left: 9%;
+        position: relative;
+        z-index: 1;
+        top: 1px;
+    }
+    .account-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        left: 20%;
+        position: relative;
+        z-index: 1;
+        top: 35px;
+        border-radius: 100%;
+    }
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        left: 9%;
+        position: relative;
+        z-index: 1;
+        top: 5px;
+    }
+    .master-name1 {
+        font-size: 1.2rem;
+        left: 120px;
+        position: relative;
+        top: -15px;
+        width: 20%;
+      }
+    .masters-container { 
+    position: relative;
+        width: 100%;
+        top: 30px;
+        height: 400px;
+    }
+  
+    .masters-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        top: 1px;
+        position: relative;
+        color: white;
+        left: 300px;
+        width: 170px;
+    }
+  
+    .masters-search {
+        position: relative;
+        width: 80%;
+        height: 40px;
+        left: -4.03%;
+        top: 1.76%;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        border-color: white;
+    }
+  
+    .masters-selected {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        width: 30%;
+        left: 40%;
+        position: relative;
+    }
+  
+  .masters-list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .master-card {
+    position: absolute;
+    width: 80%;
+    height: 80px;
+    left: 6.88%;
+    right: 8.83%;
+    top: 30.52%;
+    bottom: 83.27%;
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+}
+  
+  .master-name {
+    font-size: 1.2rem;
+    left: 120px;
+        position: relative;
+        width: 20%;
+  }
+  
+  .select-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.3s;
+    top: -80px;
+    position: relative;
+}
+  
+  .select-button.selected {
+    background: #066545;
+    color: #fff;
+  }
+}

@@ -1,4 +1,31 @@
 /* Общий стиль заголовка */
+.burger-menu {
+  display: none; /* Скрываем бургер-меню на больших экранах */
+}
+.burger-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Мобильное меню */
+.nr-lang-menu {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 60px;
+  right: 10px;
+  background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+.close-icon {
+  transform: rotate(180deg);
+}
+
+
 .nr-header {
   position: absolute;
 width: 100%;
@@ -126,8 +153,17 @@ background: rgb(255, 255, 255);
 
 /* Адаптивность */
 @media (max-width: 768px) {
+  .nr-block .nr-subtitle {
+    position: absolute;
+    height: 30.76px;
+    right: 35.09%;
+    top: 45.42%;
+    bottom: 99.08%;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
   .nr-header{
-    width: 768px;
+    width: 100%;
   }
   .div #root{
     width: 768px;
@@ -140,7 +176,7 @@ background: rgb(255, 255, 255);
     flex-direction: column;
     gap: 15px;
     height: 52px;
-    width: 768px;
+    width: 100%;
   }
 
   .nr-title {
@@ -166,5 +202,187 @@ background: rgb(255, 255, 255);
     left: 75px;
     top: 100px;
     z-index: 2;
+}
+.nr-lang {
+  display: none; /* Скрываем иконки */
+}
+.nr-lang-menu {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row; /* Изменяем направление на горизонтальное */
+  /*gap: 15px; /* Отступы между иконками */
+  align-items: center; /* Выравнивание по центру */
+  justify-content: center;
+}
+
+.nr-lang-menu .MuiIconButton-root{
+  top: -100px;
+  height: 56px;
+  left: 20px;
+}
+.burger-menu {
+  display: block; /* Показываем бургер-меню */
+}
+.burger-menu button{
+  left: 800%;
+  top: -15px;
+}
+.menu-button {
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  left: -90px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 30px;
+}
+.menu-button1 {
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  left: -70px;
+  position: relative;
+  top: 20px;
+}
+.menu-button2 {
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  left: -70px;
+  position: relative;
+  top: 50px;
+}
+.menu-button3 {
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  left: -70px;
+  position: relative;
+  top: 80px;
+}
+
+
+.menu-button:hover {
+  background-color: #ddd;
+}
+}
+@media (max-width: 657px) {
+  .burger-menu button {
+    left: 700%;
+    top: -15px;
+}
+}
+@media (max-width: 561px) {
+  .burger-menu button {
+      left: 600%;
+      top: -15px;
+  }
+}
+
+@media (max-width: 501px) {
+  .burger-menu button {
+    left: 500%;
+    top: -15px;
+}
+.nr-block .nr-title {
+  position: absolute;
+  height: 30.76px;
+  right: 40.69%;
+  top: 0.42%;
+  bottom: 99.08%;
+  color: rgb(255, 255, 255);
+}
+.nr-block .nr-subtitle {
+  position: absolute;
+  width: 300.13px;
+  height: 30.76px;
+  right: 23.09%;
+  top: 45.42%;
+  bottom: 99.08%;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+  .nr-block .nr-subtitle {
+    position: absolute;
+    width: 270.13px;
+    height: 30.76px;
+    right: 27.09%;
+    top: 45.42%;
+    bottom: 99.08%;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+.nr-block .nr-title {
+  position: absolute;
+  height: 30.76px;
+  right: 47.69%;
+  top: 0.42%;
+  bottom: 99.08%;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+}
+}
+@media (max-width: 420px) {
+  .burger-menu button {
+    left: 400%;
+    top: -15px;
+}
+.nr-block .nr-title {
+  position: absolute;
+  height: 30.76px;
+  right: 40.69%;
+  top: 0.42%;
+  bottom: 99.08%;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+}
+.nr-block .nr-subtitle {
+  position: absolute;
+  width: 300.13px;
+  height: 30.76px;
+  right: 15.09%;
+  top: 45.42%;
+  bottom: 99.08%;
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+}
+}
+@media (max-width: 370px) {
+  .nr-block .nr-subtitle {
+    position: absolute;
+    width: 270.13px;
+    height: 30.76px;
+    right: 8.09%;
+    top: 45.42%;
+    bottom: 99.08%;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+}
+@media (max-width: 336px) {
+  .burger-menu button {
+    left: 370%;
+    top: -15px;
 }
 }

@@ -198,3 +198,189 @@
   color: #FFF;
 }
 }
+
+@media (max-width: 900px) and (min-width: 768px) {
+    .rect {
+      margin-bottom: 20px;
+      width: 100%;
+      left: 0%;
+      top: 4.76%;
+  }
+  .rect2 {
+    position: absolute;
+    width: 727.28px;
+    height: 277px;
+    top: 1170px;
+    bottom: 56%;
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+}
+    .master-card {
+        position: absolute;
+        height: 187px;
+        width: 187px;
+        left: 2.01%;
+        top: 25.26%;
+        border: 1px solid rgb(225, 234, 245);
+        border-radius: 11.5px;
+        background: rgba(0, 0, 0, 0);
+    }
+.master-info {
+  margin-top: 10px;
+  width: 187px;
+  height: 150px;
+  left: px;
+  position: relative;
+  top: -1px;
+}
+.master-info p {
+  position: absolute;
+  width: 48.64px;
+  height: 10.13px;
+  left: 20.25%;
+  top: 26.37%;
+}
+.master-info h1 {
+  position: absolute;
+  width: 47.95px;
+  height: 13.34px;
+  left: 20.07%;
+  top: 65px;
+  color: rgb(138, 153, 160);
+  font-size: 16px;
+}
+.master-button {
+  position: absolute;
+  width: 100px;
+  height: 27px;
+  left: 9.38%;
+  top: 88.56%;
+  border-radius: 13.5px;
+  background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+  color: #FFF;
+}
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .rect {
+    margin-bottom: 20px;
+    width: 100%;
+    left: 0%;
+    top: 4.76%;
+}
+.rect2 {
+  position: absolute;
+  width: 727.28px;
+  height: 277px;
+  top: 1170px;
+  bottom: 56%;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+}
+  .master-card {
+      position: absolute;
+      height: 187px;
+      width: 187px;
+      left: 2.01%;
+      top: 25.26%;
+      border: 1px solid rgb(225, 234, 245);
+      border-radius: 11.5px;
+      background: rgba(0, 0, 0, 0);
+  }
+.master-info {
+margin-top: 10px;
+width: 187px;
+height: 150px;
+left: px;
+position: relative;
+top: -1px;
+}
+.master-info p {
+position: absolute;
+width: 48.64px;
+height: 10.13px;
+left: 20.25%;
+top: 26.37%;
+}
+.master-info h1 {
+position: absolute;
+width: 47.95px;
+height: 13.34px;
+left: 20.07%;
+top: 65px;
+color: rgb(138, 153, 160);
+font-size: 16px;
+}
+.master-button {
+position: absolute;
+width: 100px;
+height: 27px;
+left: 9.38%;
+top: 88.56%;
+border-radius: 13.5px;
+background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+color: #FFF;
+}
+}
+
+@media (max-width: 768px) {
+  .rect {
+    margin-bottom: 20px;
+    width: 100%;
+    left: 0%;
+    top: 4.76%;
+}
+.rect2 {
+  position: absolute;
+  width: 95%;
+  height: 277px;
+  top: 1170px;
+  bottom: 56%;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+}
+  .master-card {
+      position: absolute;
+      height: 187px;
+      width: 187px;
+      left: 2.01%;
+      top: 25.26%;
+      border: 1px solid rgb(225, 234, 245);
+      border-radius: 11.5px;
+      background: rgba(0, 0, 0, 0);
+  }
+.master-info {
+margin-top: 10px;
+width: 187px;
+height: 150px;
+left: px;
+position: relative;
+top: -1px;
+}
+.master-info p {
+position: absolute;
+width: 48.64px;
+height: 10.13px;
+left: 20.25%;
+top: 26.37%;
+}
+.master-info h1 {
+position: absolute;
+width: 47.95px;
+height: 13.34px;
+left: 20.07%;
+top: 65px;
+color: rgb(138, 153, 160);
+font-size: 16px;
+}
+.master-button {
+position: absolute;
+width: 100px;
+height: 27px;
+left: 9.38%;
+top: 88.56%;
+border-radius: 13.5px;
+background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+color: #FFF;
+}
+}

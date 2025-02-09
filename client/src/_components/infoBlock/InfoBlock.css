@@ -283,22 +283,23 @@ left: 1px;
   top: 175px;
 }
 }
-@media (max-width: 768px){
+@media (max-width: 769px){
   .nr-lang{
-    left: 300px;
+    left: 40%;
     position: relative;
     }
     .main-image img {
       width: 400px;
       height: 400px;
       position: absolute;
-      left: 180px;
+      left: 20%;
       top: 70px;
     }
       
     .info-block {
       position: absolute;
-      width: 727.8px;
+      /*width: 727.8px;*/
+      width: 93%;
       height: 262.76px;
       left: 20px;
       top: 490px;
@@ -315,7 +316,7 @@ left: 1px;
     cursor: pointer;
     font-size: 1rem;
     position: absolute;
-    left: 560px;
+    left: 75%;
     bottom: 50px;
     background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
   }
@@ -339,7 +340,96 @@ left: 1px;
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 1090.05%;
+    left: 750%;
     top: 175px;
   }
+  }
+  @media (max-width: 620px){
+    .nr-lang{
+      left: 37%;
+      position: relative;
+      }
+      .main-image img {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 15%;
+        top: 70px;
+    }
+    .info-block button {
+      z-index: 1;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1rem;
+      position: absolute;
+      left: 70%;
+      bottom: 50px;
+      background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+  }
+  .main- img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 500%;
+    top: 175px;
+}
+    }
+    @media (max-width: 520px){
+      .nr-lang {
+        left: 38%;
+        position: relative;
+    }
+    .nr-lang img{
+      width: 20px;
+      height: 20px;
+  }
+  .main-image img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 10%;
+    top: 70px;
+}
+    }
+
+    @media (max-width: 451px) {
+      .main-image img {
+          width: 400px;
+          height: 400px;
+          position: absolute;
+          left: 5%;
+          top: 70px;
+      }
+      .main- img {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 200%;
+        top: 197px;
+    }
+    .info-block button {
+      z-index: 1;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1rem;
+      position: absolute;
+      left: 60%;
+      bottom: 26px;
+      background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+  }
+  .main-image img {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 10%;
+    top: 90px;
+}
   }

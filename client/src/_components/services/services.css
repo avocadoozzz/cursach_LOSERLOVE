@@ -1,0 +1,219 @@
+.services-container {
+    padding: 20px;
+  }
+  
+  .search-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .search-bar {
+    flex: 1;
+  }
+  
+  .sort-select {
+    min-width: 150px;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .toggle-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  .zones {
+    color: #1976d2;
+  }
+  
+  .complexes {
+    color: #d32f2f;
+  }
+  
+  .Mui-selected {
+    background-color: rgba(25, 118, 210, 0.2) !important;
+  }
+  
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .service-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .service-info {
+    flex-grow: 1;
+  }
+  
+  .service-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .service-details {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .select-button {
+    background-color: #1976d2;
+    color: white;
+  }
+
+@media (max-width: 769px) {
+
+/*.services-container {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    top: 55px;
+    position: relative;
+  }
+  */
+  .header {
+    position: absolute;
+  width: 100%;
+  height: 52px;
+  left: 0%;
+  right: 0.05%;
+  top: 0%;
+  bottom: 0.81%;
+  background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%,rgb(33, 142, 126) 100%);
+  }
+  .masters-title1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    top: 1px;
+    position: relative;
+    color: white;
+    left: 300px;
+    width: 170px;
+}
+  .services-container {
+    padding: 20px;
+  }
+  
+  .search-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .search-bar {
+    flex: 1;
+  }
+  
+  .sort-select {
+    min-width: 150px;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    margin-top: 10px;
+    left: -25%;
+    position: relative;
+  }
+  .toggle-buttons .zones {
+    position: absolute;
+    width: 135px;
+    height: 32px;
+    left: 29.57%;
+    top: -50px;
+    border-radius: 16px;
+    background: rgb(8, 85, 65);
+}
+.toggle-buttons .complexes{
+    position: absolute;
+    width: 107px;
+    height: 32px;
+    left: 52%;
+    top: -50px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.css-gn0oko-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+    color: rgba(0, 0, 0, 3.97);
+    /* background-color: rgba(0, 0, 0, 0.08); */
+    font-size: 12px;
+    top: -5px;
+}
+.css-1qb8o-MuiToggleButtonGroup-root .MuiToggleButtonGroup-lastButton, .css-1qb8o-MuiToggleButtonGroup-root .MuiToggleButtonGroup-middleButton {
+    margin-left: -1px;
+    border-left: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    top: -5px;
+    font-size: 12px;
+}
+  .toggle-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  
+  .zones {
+    color: #1976d2;
+  }
+  
+  .complexes {
+    color: #d32f2f;
+  }
+  
+  .Mui-selected {
+    background-color: rgba(25, 118, 210, 0.2) !important;
+  }
+  
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .service-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .service-info {
+    flex-grow: 1;
+  }
+  
+  .service-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .service-details {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .select-button {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+} 

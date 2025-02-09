@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import authImage from "../../assets/img/auth.png";
 import googleImage from "../../assets/img/google.png";
 import appleImage from "../../assets/img/apple.png";
@@ -8,6 +9,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+const navigate = useNavigate();
 
   const handleLogin = () => {
     if (!email || !password) {
@@ -17,6 +19,7 @@ const Login = () => {
 
     setError('');
     console.log('Login:', { email, password });
+    navigate('/'); // Перенаправление на главную страницу
     // Здесь можно добавить логику авторизации (например, запрос к API)
   };
 

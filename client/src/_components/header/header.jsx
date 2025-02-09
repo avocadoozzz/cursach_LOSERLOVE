@@ -4,16 +4,13 @@ import { IconButton } from "@mui/material";
 import langIcon from '../../assets/img/header/lang.png';
 import razlogIcon from '../../assets/img/header/razlog.png';
 import accountIcon from '../../assets/img/header/account.png';
-//import auth from '../auth/auth.jsx';
 import "./header.css";
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
-  const [openAccountModal, setOpenAccountModal] = useState(false); // Для модального окна аккаунта
+  const [openAccountModal, setOpenAccountModal] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // Состояние для бургер-меню
   const navigate = useNavigate();
-
-  const userRole = localStorage.getItem("role");
-  const userid = localStorage.getItem("id");
 
   const handleToggleModal = () => {
     setOpenModal((prev) => !prev);
@@ -24,13 +21,12 @@ const Header = () => {
   };
 
   const handleAccountAction = (action) => {
-    // Навигация для регистрации или входа
     if (action === "register") {
-      navigate("/register");
+      navigate("../register");
     } else if (action === "auth") {
       navigate("../auth");
     }
-    setOpenAccountModal(false); // Закрыть модальное окно после выбора действия
+    setOpenAccountModal(false);
   };
 
   return (
@@ -41,6 +37,15 @@ const Header = () => {
           <div className="nr-subtitle">Могилёв, ул. Турова , д.16</div>
         </div>
 
+        {/* Бургер-меню (кнопка) */}
+        <div className="burger-menu">
+          <IconButton onClick={() => setMenuOpen((prev) => !prev)} sx={{ color: "white" }}>
+            <span className={`burger-icon ${menuOpen ? "close-icon" : ""}`}>
+            {menuOpen ? "✖" : "☰"}</span>
+          </IconButton>
+        </div>
+
+        {/* Блок с иконками (скрывается на мобилках) */}
         <div className="nr-lang">
           <IconButton onClick={handleToggleModal} sx={{ color: "white" }}>
             <img src={langIcon} alt="Language" width="30" height="30" />
@@ -50,22 +55,43 @@ const Header = () => {
             <img src={razlogIcon} alt="Razlog" width="20" height="20" />
           </IconButton>
 
-          <IconButton
-            onClick={handleToggleAccountModal}
-            sx={{ color: "white" }}
-          >
+          <IconButton onClick={handleToggleAccountModal} sx={{ color: "white" }}>
             <img src={accountIcon} alt="Account" width="40" height="40" />
           </IconButton>
         </div>
       </div>
 
+      {/* Мобильное меню (отображается только если menuOpen === true) */}
+      {menuOpen && (
+        <div className="nr-lang-menu">
+          <IconButton onClick={handleToggleModal} sx={{ color: "white" }}>
+            <img src={langIcon} alt="Language" width="30" height="30" />
+          </IconButton>
+
+          <IconButton onClick={handleToggleModal} sx={{ color: "white" }}>
+            <img src={razlogIcon} alt="Razlog" width="20" height="20" />
+          </IconButton>
+
+          <IconButton onClick={handleToggleAccountModal} sx={{ color: "white" }}>
+            <img src={accountIcon} alt="Account" width="40" height="40" />
+          </IconButton>
+
+          {/* Новые кнопки */}
+          <div className="menu-button">
+          <button className="menu-button1" onClick={() => navigate("/services")}>Услуги</button>
+          <button className="menu-button2" onClick={() => navigate("/masters")}>Мастер</button>
+          <button className="menu-button3" onClick={() => navigate("/reviews")}>Отзывы</button>
+          </div>
+        </div>
+      )}
+
       {/* Модальное окно для аккаунта */}
       {openAccountModal && (
         <div className="account-modal">
-        <button className="close-button" onClick={handleToggleAccountModal}>
+          <button className="close-button" onClick={handleToggleAccountModal}>
             &times;
           </button>
-          <h3>Выберите действие :</h3>
+          <h3>Выберите действие:</h3>
           <button onClick={() => handleAccountAction("register")} className="account-modal1">Зарегистрироваться</button>
           <button onClick={() => handleAccountAction("auth")} className="account-modal2">Войти</button>
         </div>
