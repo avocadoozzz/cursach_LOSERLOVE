@@ -44,13 +44,13 @@ const Masters = () => {
     <div className="nr-header nrs-gradient">
 
 <IconButton onClick={() => navigate(-1)} sx={{ position: "absolute", top: 10, left: 10, color: "white" }}>
-    <span style={{ fontSize: "24px" }}>{"<"}</span>
+    <span style={{ fontSize: "28px" }}>{"<"}</span>
   </IconButton>
 
       <h1 className="masters-title">Выбор мастера</h1>
 
       <IconButton onClick={() => navigate(`/masterServices/${selectedMasters[0] || 1}`)} sx={{ position: "absolute", top: 10, right: 10, color: "white", zIndex: 9999 }}>
-  <span style={{ fontSize: "24px" }}>{">"}</span>
+  <span style={{ fontSize: "28px" }}>{">"}</span>
 </IconButton>
 
 

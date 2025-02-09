@@ -6,7 +6,7 @@
     font-size: 20px;
     border-radius: 5px;
     transition: 0.3s;
-    left: -90px;
+    left: -187px;
     position: relative;
     top: -10px;
 }
@@ -24,9 +24,14 @@
     justify-content: center;
  }
  .nr-lang-menu1 .MuiIconButton-root {
-    width: 60px;
+    width: 80px;
     top: -35.42%;
     left: 40px;
+    height: 80px;
+}
+.nr-lang-menu1 img{
+    width: 70px;
+    height: 70px;
 }
   .burger-menu1 {
     display: block; /* Показываем бургер-меню */
@@ -37,19 +42,19 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 40px;
     border-radius: 5px;
     transition: 0.3s;
     left: -90px;
     position: relative;
     top: 20px;
-  }
+}
   .menu-button22 {
     color: #000;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 40px;
     border-radius: 5px;
     transition: 0.3s;
     left: -90px;
@@ -61,7 +66,7 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 40px;
     border-radius: 5px;
     transition: 0.3s;
     left: -90px;
@@ -78,9 +83,9 @@
     top: -15px;
 }
 .burger-icon1 {
-    font-size: 24px;
+    font-size: 38px;
     cursor: pointer;
-    top: 1px;
+    top: 5px;
     position: relative;
     left: 10%;
 }
@@ -99,26 +104,17 @@
     z-index: 1000;
 }
 
-.burger-icon1 {
-    font-size: 24px;
-    cursor: pointer;
-    top: -10px;
-    position: relative;
-    left: -300%;
-}
-
 /* Мобильное меню */
 .nr-lang-menu1 {
     position: absolute;
     top: 60px;
     right: 10px;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
     padding: 15px;
     border-radius: 8px;
     display: flex;
-    flex-direction: column;
     gap: 10px;
     z-index: 1;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -138,7 +134,7 @@
   .nr-header {
     position: absolute;
   width: 100%;
-  height: 52px;
+  height: 72px;
   left: 0%;
   right: 0.05%;
   top: 0%;
@@ -153,36 +149,37 @@
 }
 
 .search-icon {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
-    left: 9%;
+    left: 13%;
     position: relative;
     z-index: 1;
-    top: 5px;
+    top: 15px;
 }
-.search-text{
+.search-text {
     margin-right: 10px;
-    left: 9%;
+    left: 14%;
     position: relative;
     z-index: 1;
-    top: 1px;
+    top: 10px;
+    font-size: 30px;
 }
 .masters-title {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 10px;
-    top: 1px;
+    top: -5px;
     position: relative;
     color: white;
-    left: 300px;
-    width: 170px;
+    left: 40%;
+    width: 15%;
 }
   
 .masters-search {
     position: relative;
     width: 80%;
-    height: 40px;
-    left: -4.03%;
+    height: 60px;
+    left: 4.03%;
     top: 1.76%;
     border-radius: 10px;
     background: rgb(255, 255, 255);
@@ -190,7 +187,7 @@
 }
   
 .masters-selected {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     width: 30%;
     left: 40%;
@@ -208,40 +205,39 @@
   .master-card {
     position: absolute;
     width: 80%;
-    height: 80px;
-    left: 6.88%;
-    right: 8.83%;
-    top: 30.52%;
-    bottom: 83.27%;
-    border-radius: 12px;
+    height: 140px;
+    left: 11.28%;
+    top: 49.52%;
+    border-radius: 14px;
     background: rgb(255, 255, 255);
 }
   
-  .master-name {
-    font-size: 1.2rem;
-    left: 120px;
-        position: relative;
-        width: 20%;
-  }
-  .master-name1 {
-    font-size: 1.2rem;
-    left: 120px;
-        position: relative;
-        top: -15px;
-        width: 20%;
-  }
+.master-name {
+    font-size: 1.9rem;
+    left: 250px;
+    position: relative;
+    width: 20%;
+}
+.master-name1 {
+    font-size: 1.9rem;
+    left: 250px;
+    position: relative;
+    top: -15px;
+    width: 20%;
+}
 
   .select-button {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     border: none;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 4rem;
     cursor: pointer;
     background: #fff;
     transition: 0.3s;
-    top: -80px;
+    top: -130px;
     position: relative;
+    left: 1.5%;
 }
   
   .select-button.selected {
@@ -249,13 +245,13 @@
     color: #fff;
   }
   .account-icon {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     margin-right: 10px;
-    left: 20%;
+    left: 65%;
     position: relative;
     z-index: 1;
-    top: 35px;
+    top: 69px;
     border-radius: 100%;
 }
 
@@ -294,9 +290,136 @@
     cursor: pointer;
     color: black;
 }
-  
+@media (max-width: 1632px) { 
+    .masters-search {
+        position: relative;
+        width: 80%;
+        height: 60px;
+        left: 0.03%;
+        top: 1.76%;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        border-color: white;
+    }
+    .master-card {
+        position: absolute;
+        width: 80%;
+        height: 140px;
+        left: 9.28%;
+        top: 49.52%;
+        border-radius: 14px;
+        background: rgb(255, 255, 255);
+    }
+    .account-icon {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        left: 49%;
+        position: relative;
+        z-index: 1;
+        top: 69px;
+        border-radius: 100%;
+    }
+    .masters-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        top: -5px;
+        position: relative;
+        color: white;
+        left: 40%;
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 1220px) {  
+    .masters-search {
+        position: relative;
+        width: 80%;
+        height: 60px;
+        left: -5.03%;
+        top: 1.76%;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        border-color: white;
+    }
+    .master-card {
+        position: absolute;
+        width: 80%;
+        height: 140px;
+        left: 6.28%;
+        top: 49.52%;
+        border-radius: 14px;
+        background: rgb(255, 255, 255);
+    }
+
+}
+@media (max-width: 960px) {  
+    .masters-title {
+        font-size: 26px;
+        margin-bottom: 10px;
+        top: 5px;
+        position: relative;
+        color: white;
+        left: 35%;
+        width: 30%;
+    }
+    .masters-search {
+        position: relative;
+        width: 80%;
+        height: 60px;
+        left: -9.03%;
+        top: 1.76%;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        border-color: white;
+    }
+    .master-card {
+        position: absolute;
+        width: 80%;
+        height: 140px;
+        left: 6.58%;
+        top: 49.52%;
+        border-radius: 14px;
+        background: rgb(255, 255, 255);
+    }
+    .account-icon {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        left: 29%;
+        position: relative;
+        z-index: 1;
+        top: 69px;
+        border-radius: 100%;
+    }
+    .master-name {
+        font-size: 1.9rem;
+        left: 230px;
+        position: relative;
+        width: 20%;
+    }
+    .master-name1 {
+        font-size: 1.9rem;
+        left: 230px;
+        position: relative;
+        top: -15px;
+        width: 20%;
+    }
+    
+}
 
   @media (max-width: 769px) {
+    .nr-header {
+        position: absolute;
+        width: 100%;
+        height: 52px;
+        left: 0%;
+        right: 0.05%;
+        top: 0%;
+        bottom: 0.81%;
+        background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%, rgb(33, 142, 126) 100%);
+    }
     .menu-button12 {
         color: #000;
         padding: 10px 20px;
@@ -311,17 +434,22 @@
     }
     .nr-lang-menu1 {
         position: absolute;
+        width: 330px;
+        height: 330px;
         top: 60px;
         right: 10px;
         background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
         padding: 15px;
         border-radius: 8px;
         display: flex;
-        flex-direction: row; /* Изменяем направление на горизонтальное */
-        /*gap: 15px; /* Отступы между иконками */
-        align-items: center; /* Выравнивание по центру */
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
-     }
+    }
+    .nr-lang-menu1 img {
+        width: 40px;
+        height: 40px;
+    }
      .nr-lang-menu1 .MuiIconButton-root {
         width: 60px;
         top: -35.42%;
@@ -336,19 +464,19 @@
         padding: 10px 20px;
         border: none;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 16px;
         border-radius: 5px;
         transition: 0.3s;
         left: -90px;
         position: relative;
         top: 20px;
-      }
+    }
       .menu-button22 {
         color: #000;
         padding: 10px 20px;
         border: none;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 16px;
         border-radius: 5px;
         transition: 0.3s;
         left: -90px;
@@ -360,7 +488,7 @@
         padding: 10px 20px;
         border: none;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 16px;
         border-radius: 5px;
         transition: 0.3s;
         left: -90px;
@@ -379,7 +507,6 @@
     .burger-icon1 {
         font-size: 24px;
         cursor: pointer;
-        top: 1px;
         position: relative;
         left: 10%;
     }
@@ -389,12 +516,12 @@
       }
 
    
-    .search-text{
+      .search-text {
         margin-right: 10px;
-        left: 9%;
         position: relative;
         z-index: 1;
         top: 1px;
+        font-size: 20px;
     }
     .account-icon {
         width: 60px;
@@ -410,7 +537,6 @@
         width: 20px;
         height: 20px;
         margin-right: 10px;
-        left: 9%;
         position: relative;
         z-index: 1;
         top: 5px;
@@ -435,15 +561,15 @@
         top: 1px;
         position: relative;
         color: white;
-        left: 300px;
-        width: 170px;
+        left: 35%;
+        width: 160px;
     }
-  
+
     .masters-search {
         position: relative;
         width: 80%;
         height: 40px;
-        left: -4.03%;
+        left: -6.03%;
         top: 1.76%;
         border-radius: 10px;
         background: rgb(255, 255, 255);
@@ -502,4 +628,333 @@
     background: #066545;
     color: #fff;
   }
+}
+@media (max-width: 709px) {
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        left: 10%;
+        position: relative;
+        z-index: 1;
+        top: 5px;
+    }
+    .search-text {
+        margin-right: 10px;
+        left: 10%;
+        position: relative;
+        z-index: 1;
+        top: 1px;
+    }
+    .master-card {
+        position: absolute;
+        width: 80%;
+        height: 80px;
+        left: 7.88%;
+        right: 8.83%;
+        top: 30.52%;
+        bottom: 83.27%;
+        border-radius: 12px;
+        background: rgb(255, 255, 255);
+    }
+}
+@media (max-width: 615px) {
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        left: 15%;
+        position: relative;
+        z-index: 1;
+        top: 5px;
+    }
+    .search-text {
+        margin-right: 10px;
+        left: 16%;
+        position: relative;
+        z-index: 1;
+        top: 1px;
+    }
+    .master-card {
+        position: absolute;
+        width: 80%;
+        height: 80px;
+        left: 9.88%;
+        right: 8.83%;
+        top: 30.52%;
+        bottom: 83.27%;
+        border-radius: 12px;
+        background: rgb(255, 255, 255);
+    }
+    .nr-lang-menu1 {
+        position: absolute;
+        width: 270px;
+        height: 270px;
+        top: 60px;
+        right: 10px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+    }
+}
+@media (max-width: 525px) {
+    .masters-search {
+        position: relative;
+        width: 80%;
+        height: 40px;
+        top: 1.76%;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        border-color: white;
+    }
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        left: 15%;
+        position: relative;
+        z-index: 1;
+        top: 5px;
+    }
+    .search-text {
+        margin-right: 10px;
+        left: 15%;
+        position: relative;
+        z-index: 1;
+        top: 1px;
+    }
+    .master-card {
+        position: absolute;
+        width: 80%;
+        height: 80px;
+        left: 8.88%;
+        right: 8.83%;
+        top: 30.52%;
+        bottom: 83.27%;
+        border-radius: 12px;
+        background: rgb(255, 255, 255);
+    }
+}
+@media (max-width: 513px) {
+    .masters-search {
+        position: relative;
+        width: 80%;
+        height: 40px;
+        top: -30px;
+        left: 40px;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        border-color: white;
+    }
+    .masters-selected {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        width: 30%;
+        left: 35%;
+        top: -30px;
+        position: relative;
+    }
+    .account-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        left: 18%;
+        position: relative;
+        z-index: 1;
+        top: 16px;
+        border-radius: 100%;
+    }
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        left: 15%;
+        position: relative;
+        z-index: 1;
+        top: 5px;
+    }
+    .search-text {
+        margin-right: 10px;
+        left: 15%;
+        position: relative;
+        z-index: 1;
+        top: 1px;
+    }
+    .master-card {
+        position: absolute;
+        width: 80%;
+        height: 80px;
+        left: 7.88%;
+        top: 30.52%;
+        border-radius: 12px;
+        background: rgb(255, 255, 255);
+    }
+    .master-name {
+        font-size: 1.1rem;
+        left: 120px;
+        position: relative;
+        width: 20%;
+    }
+    .master-name1 {
+        font-size: 1.1rem;
+        left: 120px;
+        position: relative;
+        top: -15px;
+        width: 20%;
+    }
+    .select-button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        background: #fff;
+        transition: 0.3s;
+        top: -70px;
+        position: relative;
+    }
+}
+@media (max-width: 471px) {
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        left: 15%;
+        position: relative;
+        z-index: 1;
+        top: 5px;
+    }
+    .search-text {
+        margin-right: 10px;
+        left: 15%;
+        position: relative;
+        z-index: 1;
+        top: 1px;
+    }
+    .master-card {
+        position: absolute;
+        width: 80%;
+        height: 80px;
+        left: 9.88%;
+        right: 8.83%;
+        top: 30.52%;
+        bottom: 83.27%;
+        border-radius: 12px;
+        background: rgb(255, 255, 255);
+    }
+    .masters-search {
+        position: relative;
+        width: 80%;
+        height: 40px;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        border-color: white;
+    }
+    .masters-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        top: 1px;
+        position: relative;
+        color: white;
+        left: 25%;
+        width: 160px;
+    }
+}
+@media (max-width: 457px) {
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        left: 15%;
+        position: relative;
+        z-index: 1;
+        top: 5px;
+    }
+    .search-text {
+        margin-right: 10px;
+        left: 15%;
+        position: relative;
+        z-index: 1;
+        top: 1px;
+    }
+    .master-card {
+        position: absolute;
+        width: 80%;
+        height: 80px;
+        left: 8.8%;
+        top: 30.52%;
+        bottom: 83.27%;
+        border-radius: 12px;
+        background: rgb(255, 255, 255);
+    }
+    .masters-search {
+        position: relative;
+        width: 80%;
+        height: 40px;
+        left: 8.03%;
+        top: -28.76px;
+        border-radius: 10px;
+        background: rgb(255, 255, 255);
+        border-color: white;
+    }
+    .masters-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        top: 1px;
+        position: relative;
+        color: white;
+        left: 25%;
+        width: 160px;
+    }
+    .masters-selected {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        width: 30%;
+        left: 35%;
+        position: relative;
+        top: -30px;
+    }
+    .account-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        left: 17%;
+        position: relative;
+        z-index: 1;
+        top: 15px;
+        border-radius: 100%;
+    }
+}
+@media (max-width: 359px) {
+    .masters-selected {
+        font-size: 1.13rem;
+        margin-bottom: 10px;
+        width: 30%;
+        left: 35%;
+        position: relative;
+        top: -30px;
+    }
+    .burger-icon1 {
+        font-size: 24px;
+        cursor: pointer;
+        top: 5px;
+        position: relative;
+        left: 150%;
+    }
+    .account-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        left: 21%;
+        position: relative;
+        z-index: 1;
+        top: 15px;
+        border-radius: 100%;
+    }
 }

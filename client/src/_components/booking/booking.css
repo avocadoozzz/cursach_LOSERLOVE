@@ -13,7 +13,7 @@
     height: 14.47px;
     left: 7.11%;
     right: 74.99%;
-    top: 3.34%;
+    top: 10.34%;
     font-size: 26px;
 }
 .booking {
@@ -21,7 +21,7 @@
     width: 460px;
     height: 200px;
     padding: 10px 20px;
-    top: 5%;
+    top: 15%;
     left: 5%;
 }
   .booking-links {
@@ -65,6 +65,9 @@
   .booking-link:hover {
     background-color: #00ffa6;
   }
+  .nr-title {
+    font-size: 1.5rem;
+}
 
   @media (max-width: 1441px){
     .booking-title {
@@ -83,6 +86,9 @@
         padding: 10px 20px;
         top: 10%;
         left: 5%;
+    }
+    .nr-title {
+        font-size: 1.5rem;
     }
   }
 
@@ -165,6 +171,23 @@
       top: 10%;
       left: 2%;
   }
+  .nr-block .nr-title {
+    position: absolute;
+    height: 30.76px;
+    right: 37.69%;
+    top: 0.42%;
+    bottom: 99.08%;
+    color: rgb(255, 255, 255);
+}
+.nr-block .nr-subtitle {
+    width: 60%;
+    position: absolute;
+    height: 30.76px;
+    right: 22.09%;
+    top: 45.42%;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
   .booking-links {
     position: absolute;
     width: 42%;
@@ -203,3 +226,60 @@
     position: relative;
   }
 }
+@media (max-width: 490px){
+    .nr-block .nr-subtitle {
+        width: 60%;
+        position: absolute;
+        height: 30.76px;
+        right: 22.09%;
+        top: 45.42%;
+        font-size: 1.3rem;
+        color: rgb(255, 255, 255);
+    }
+    .nr-block .nr-title {
+        position: absolute;
+        height: 30.76px;
+        right: 37.69%;
+        top: 0.42%;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+    }
+    @media (max-width: 423px){
+        .nr-block .nr-subtitle {
+            width: 60%;
+            position: absolute;
+            height: 30.76px;
+            right: 22.09%;
+            top: 45.42%;
+            font-size: 1.1rem;
+            color: rgb(255, 255, 255);
+        }
+        .nr-block .nr-title {
+            position: absolute;
+            height: 30.76px;
+            right: 39.69%;
+            top: 0.42%;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+        }
+        }
+ @media (max-width: 364px){
+.nr-block .nr-subtitle {
+    width: 60%;
+    position: absolute;
+    height: 30.76px;
+   right: 22.09%;
+    top: 45.42%;
+    font-size: 15px;
+     color: rgb(255, 255, 255);
+}
+.nr-block .nr-title {
+     position: absolute;
+     height: 30.76px;
+     right: 39.69%;
+     top: 0.42%;
+    color: rgb(255, 255, 255);
+     font-size: 16px;
+}
+ }

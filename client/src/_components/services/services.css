@@ -1,92 +1,348 @@
-.services-container {
-    padding: 20px;
-  }
-  
-  .search-controls {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .search-bar {
-    flex: 1;
-  }
-  
-  .sort-select {
-    min-width: 150px;
-  }
-  
-  .toggle-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .toggle-text {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-  }
-  
-  .zones {
-    color: #1976d2;
-  }
-  
-  .complexes {
-    color: #d32f2f;
-  }
-  
-  .Mui-selected {
-    background-color: rgba(25, 118, 210, 0.2) !important;
-  }
-  
-  .service-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .service-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  .service-info {
-    flex-grow: 1;
-  }
-  
-  .service-name {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .service-details {
-    font-size: 14px;
-    color: gray;
-  }
-  
-  .select-button {
-    background-color: #1976d2;
+.masters-title2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    top: 1px;
+    position: relative;
     color: white;
+    left: 40%;
+    width: 150px;
+}
+.menu-button123 {
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    left: -90px;
+    position: relative;
+    top: -10px;
+}
+.nr-lang-menu2 {
+    position: absolute;
+    top: 70px;
+    background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+}
+ .nr-lang-menu2 .MuiIconButton-root {
+    width: 60px;
+    top: -35.42%;
+    left: 40px;
+}
+.burger-menu2 {
+    display: block;
+    left: 85%;
+    top: -45px;
+    position: relative;
+    width: 10%;
+}
+ 
+  .menu-button111 {
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    left: -90px;
+    position: relative;
+    top: 20px;
+  }
+  .menu-button222 {
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    left: -90px;
+    position: relative;
+    top: 50px;
+  }
+  .menu-button333 {
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    left: -90px;
+    position: relative;
+    top: 80px;
+  }
+  .menu-button2:hover {
+    background-color: #ddd;
   }
 
-@media (max-width: 769px) {
+
+  .burger-menu2 button {
+    left: -180%;
+    top: -15px;
+}
+.burger-icon2 {
+    font-size: 24px;
+    cursor: pointer;
+    top: 20px;
+    position: relative;
+    left: 470%;
+}
+.btn-open-menu2 img {
+    width: 35px;
+    height: 35px;
+  }
+
+
+
+
 
 /*.services-container {
-    max-width: 100%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    background: #f7f8fc;
-    top: 55px;
+max-width: 100%;
+margin: 0 auto;
+font-family: Arial, sans-serif;
+background: #f7f8fc;
+top: 55px;
+position: relative;
+}
+*/
+.header {
+position: absolute;
+width: 100%;
+height: 52px;
+left: 0%;
+right: 0.05%;
+top: 0%;
+bottom: 0.81%;
+background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%,rgb(33, 142, 126) 100%);
+}
+
+.services-container {
+padding: 20px;
+top: -40px;
+position: relative;
+}
+
+/* .search-controls {
+display: flex;
+gap: 10px;
+margin-bottom: 15px;
+}*/
+
+.search-bar {
+flex: 1 ;
+position: absolute;
+width: 660px ;
+height: 55px;
+top: 1.17%;
+border-radius: 10px;
+background: rgb(255, 255, 255);
+}
+
+.sort-select {
+min-width: 150px;
+}
+.toggle-buttons1 {
+    width: 60%;
+    z-index: 3;
     position: relative;
-  }
-  */
+    left: -1%;
+    height: 60px;
+    top: -49px;
+}
+
+.zones button {
+position: absolute;
+width: 135px;
+height: 32px;
+left: 2.57%;
+border-radius: 16px !important;
+background: rgb(8, 85, 65) ;
+z-index: 3;
+font-size: 12px;
+}
+.complexes button{
+position: absolute;
+width: 107px;
+height: 32px;
+left: 37%;
+border-radius: 16px !important;
+background: rgb(255, 255, 255);
+z-index: 3;
+font-size: 12px;
+}
+
+.toggle-text {
+font-size: 18px;
+font-weight: bold;
+text-transform: none;
+padding: 10px 20px;
+border-radius: 8px;
+}
+.filter-select{
+width: 100px;
+left: 72%;
+position: relative;
+z-index: 9;
+}
+.Mui-selected {
+background-color: rgba(25, 118, 210, 0.2) !important;
+}
+
+.service-list {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.service-card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+border: 1px solid #ddd;
+border-radius: 8px;
+}
+
+.service-info {
+flex-grow: 1;
+}
+
+.service-name {
+font-size: 16px;
+font-weight: bold;
+}
+
+.service-details {
+font-size: 14px;
+color: gray;
+}
+
+.select-button1 {
+background-color:rgb(8, 85, 65) !important;
+color: white !important;
+z-index: 3;
+}
+
+  
+@media (max-width: 769px) {
+    .masters-title2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        top: 1px;
+        position: relative;
+        color: white;
+        left: 40%;
+        width: 150px;
+    }
+    .menu-button123 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: -10px;
+    }
+    .nr-lang-menu2 {
+        position: absolute;
+        top: 70px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        width: 300px;
+        height: 300px;
+        left: 50%;
+    }
+     .nr-lang-menu2 .MuiIconButton-root {
+        width: 60px;
+        top: -35.42%;
+        left: 40px;
+    }
+    .burger-menu2 {
+        display: block;
+        left: 85%;
+        top: -45px;
+        position: relative;
+        width: 10%;
+    }
+     
+      .menu-button111 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: 20px;
+      }
+      .menu-button222 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: 50px;
+      }
+      .menu-button333 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: 80px;
+      }
+      .menu-button2:hover {
+        background-color: #ddd;
+      }
+
+
+      .burger-menu2 button {
+        left: -180%;
+        top: -15px;
+    }
+    .burger-icon2 {
+        font-size: 24px;
+        cursor: pointer;
+        top: 20px;
+        position: relative;
+        left: 470%;
+    }
+    .btn-open-menu2 img {
+        width: 35px;
+        height: 35px;
+      }
+
   .header {
     position: absolute;
   width: 100%;
@@ -97,71 +353,62 @@
   bottom: 0.81%;
   background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%,rgb(33, 142, 126) 100%);
   }
-  .masters-title1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    top: 1px;
-    position: relative;
-    color: white;
-    left: 300px;
-    width: 170px;
-}
-  .services-container {
+
+.services-container {
     padding: 20px;
-  }
+    top: -40px;
+    position: relative;
+}
   
-  .search-controls {
+ /* .search-controls {
     display: flex;
     gap: 10px;
     margin-bottom: 15px;
-  }
+  }*/
   
   .search-bar {
-    flex: 1;
-  }
-  
+    flex: 1 ;
+    position: absolute;
+    width: 660px ;
+    height: 55px;
+    top: 1.17%;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+}
+
   .sort-select {
     min-width: 150px;
   }
-  
-  .toggle-buttons {
-    display: flex;
-    margin-top: 10px;
-    left: -25%;
+  .toggle-buttons1 {
+    width: 60%;
+    z-index: 3;
     position: relative;
-  }
-  .toggle-buttons .zones {
+    left: -1%;
+    height: 60px;
+    top: -49px;
+}
+
+.zones button {
     position: absolute;
     width: 135px;
     height: 32px;
-    left: 29.57%;
-    top: -50px;
-    border-radius: 16px;
-    background: rgb(8, 85, 65);
-}
-.toggle-buttons .complexes{
+    left: 2.57%;
+    border-radius: 16px !important;
+    background: rgb(8, 85, 65) ;
+    z-index: 3;
+    font-size: 12px;
+    }
+    .complexes button{
     position: absolute;
     width: 107px;
     height: 32px;
-    left: 52%;
-    top: -50px;
-    border-radius: 16px;
+    left: 37%;
+    border-radius: 16px !important;
     background: rgb(255, 255, 255);
-}
-.css-gn0oko-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
-    color: rgba(0, 0, 0, 3.97);
-    /* background-color: rgba(0, 0, 0, 0.08); */
+    z-index: 3;
     font-size: 12px;
-    top: -5px;
-}
-.css-1qb8o-MuiToggleButtonGroup-root .MuiToggleButtonGroup-lastButton, .css-1qb8o-MuiToggleButtonGroup-root .MuiToggleButtonGroup-middleButton {
-    margin-left: -1px;
-    border-left: 1px solid transparent;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    top: -5px;
-    font-size: 12px;
-}
+    }
+
   .toggle-text {
     font-size: 18px;
     font-weight: bold;
@@ -169,15 +416,11 @@
     padding: 10px 20px;
     border-radius: 8px;
   }
-  
-  .zones {
-    color: #1976d2;
+  .filter-select{
+    width: 100px;
+    left: 72%;
+    position: relative;
   }
-  
-  .complexes {
-    color: #d32f2f;
-  }
-  
   .Mui-selected {
     background-color: rgba(25, 118, 210, 0.2) !important;
   }
@@ -211,9 +454,316 @@
     color: gray;
   }
   
-  .select-button {
-    background-color: #1976d2;
-    color: white;
+  .select-button1 {
+    background-color:rgb(8, 85, 65) !important;
+    color: white !important;
+    z-index: 3;
   }
   
 } 
+
+@media (max-width: 750px) {
+    .filter-select{
+        width: 100px;
+        left: 69%;
+        position: relative;
+        z-index: 9;
+      }
+}
+@media (max-width: 705px) {
+    .complexes button{
+        position: absolute;
+        width: 107px;
+        height: 32px;
+        left: 40%;
+        border-radius: 16px !important;
+        background: rgb(255, 255, 255);
+        z-index: 3;
+        font-size: 12px;
+        }
+}
+@media (max-width: 685px) {
+    .filter-select{
+        width: 100px;
+        left: 62%;
+        position: relative;
+        z-index: 9;
+      }
+      .complexes button{
+        position: absolute;
+        width: 107px;
+        height: 32px;
+        left: 43%;
+        border-radius: 16px !important;
+        background: rgb(255, 255, 255);
+        z-index: 3;
+        font-size: 12px;
+        }
+        .nr-lang-menu2 {
+            position: absolute;
+            top: 70px;
+            background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            width: 280px;
+            height: 280px;
+            left: 40%;
+        }
+}
+@media (max-width: 615px) {
+    .complexes button{
+        position: absolute;
+        width: 107px;
+        height: 32px;
+        left: 47%;
+        border-radius: 16px !important;
+        background: rgb(255, 255, 255);
+        z-index: 3;
+        font-size: 12px;
+        }
+}
+@media (max-width: 570px) {
+    .filter-select{
+        width: 100px;
+        left: 55%;
+        position: relative;
+        z-index: 9;
+      }
+      .complexes button{
+        position: absolute;
+        width: 107px;
+        height: 32px;
+        left: 53%;
+        border-radius: 16px !important;
+        background: rgb(255, 255, 255);
+        z-index: 3;
+        font-size: 12px;
+        }
+        .burger-menu2 {
+            display: block;
+            left: 75%;
+            top: -45px;
+            position: relative;
+            width: 10%;
+        }
+        .nr-lang-menu2 {
+            position: absolute;
+            top: 70px;
+            background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            width: 280px;
+            height: 280px;
+            left: 30%;
+        }
+}
+@media (max-width: 501px) {
+    .filter-select{
+        width: 70px;
+        left: 65%;
+        position: relative;
+        z-index: 9;
+      }
+      .complexes button{
+        position: absolute;
+        width: 107px;
+        height: 32px;
+        left: 69%;
+        border-radius: 16px !important;
+        background: rgb(255, 255, 255);
+        z-index: 3;
+        font-size: 12px;
+        }
+        .burger-menu2 {
+            display: block;
+            left: 75%;
+            top: -45px;
+            position: relative;
+            width: 10%;
+        }
+}
+
+@media (max-width: 471px) {
+    .filter-select{
+        width: 70px;
+        left: 55%;
+        position: relative;
+        z-index: 9;
+        height: 60px;
+      }
+      .zones button {
+        position: absolute;
+        width: 130px;
+        height: 32px;
+        left: -1.57%;
+        border-radius: 16px !important;
+        background: rgb(8, 85, 65);
+        z-index: 3;
+        font-size: 11px;
+    }
+      .complexes button{
+        position: absolute;
+        width: 100px;
+        height: 32px;
+        left: 1%;
+        top: 60px;
+        border-radius: 16px !important;
+        background: rgb(255, 255, 255);
+        z-index: 3;
+        font-size: 11px;
+        }
+        .burger-menu2 {
+            display: block;
+            left: 75%;
+            top: -45px;
+            position: relative;
+            width: 10%;
+        }
+        .nr-lang-menu2 {
+            position: absolute;
+            top: 70px;
+            background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            width: 280px;
+            height: 280px;
+            left: 22%;
+        }
+}
+@media (max-width: 405px) {
+    .masters-title2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        top: 1px;
+        position: relative;
+        color: white;
+        left: 25%;
+        width: 150px;
+    }
+    .filter-select{
+        width: 70px;
+        left: 55%;
+        position: relative;
+        z-index: 9;
+        height: 60px;
+      }
+      .zones button {
+        position: absolute;
+        width: 130px;
+        height: 32px;
+        left: -1.57%;
+        border-radius: 16px !important;
+        background: rgb(8, 85, 65);
+        z-index: 3;
+        font-size: 11px;
+    }
+      .complexes button{
+        position: absolute;
+        width: 100px;
+        height: 32px;
+        left: 1%;
+        top: 60px;
+        border-radius: 16px !important;
+        background: rgb(255, 255, 255);
+        z-index: 3;
+        font-size: 11px;
+        }
+        .burger-menu2 {
+            display: block;
+            left: 70%;
+            top: -45px;
+            position: relative;
+            width: 10%;
+        }
+        .nr-lang-menu2 {
+            position: absolute;
+            top: 70px;
+            background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            width: 280px;
+            height: 280px;
+            left: 12%;
+        }
+}
+@media (max-width: 355px) {
+    .masters-title2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        top: 1px;
+        position: relative;
+        color: white;
+        left: 25%;
+        width: 150px;
+    }
+    .filter-select{
+        width: 70px;
+        left: 50%;
+        position: relative;
+        z-index: 9;
+        height: 60px;
+      }
+      .zones button {
+        position: absolute;
+        width: 130px;
+        height: 32px;
+        left: -1.57%;
+        border-radius: 16px !important;
+        background: rgb(8, 85, 65);
+        z-index: 3;
+        font-size: 11px;
+    }
+      .complexes button{
+        position: absolute;
+        width: 100px;
+        height: 32px;
+        left: 1%;
+        top: 60px;
+        border-radius: 16px !important;
+        background: rgb(255, 255, 255);
+        z-index: 3;
+        font-size: 11px;
+        }
+        .burger-menu2 {
+            display: block;
+            left: 65%;
+            top: -45px;
+            position: relative;
+            width: 10%;
+        }
+        .nr-lang-menu2 {
+            position: absolute;
+            top: 70px;
+            background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            width: 280px;
+            height: 280px;
+            left: 2%;
+        }
+}
