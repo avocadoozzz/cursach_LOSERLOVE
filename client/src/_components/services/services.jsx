@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState  } from "react";
 import { Button, TextField, ToggleButton, ToggleButtonGroup, MenuItem, Select, FormControl, InputLabel } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { IconButton } from "@mui/material";
@@ -6,6 +6,7 @@ import "./services.css";
 import langIcon from '../../assets/img/header/lang.png';
 import razlogIcon from '../../assets/img/header/razlog.png';
 import accountIcon from '../../assets/img/header/account.png';
+
 
 const allServices = [
   { name: "Арелолы", price: 10, duration: 5, category: "zones" },
@@ -18,9 +19,7 @@ const allServices = [
   { name: "Грудь и живот", price: 50, duration: 30, category: "complexes" },
   { name: "Задняя/внутренняя поверхность бедра", price: 20, duration: 20, category: "zones" },
   { name: "Затылок(кантик)", price: 10, duration: 5, category: "zones" },
-  { name: "Бедро/голень", price: 30, duration: 20, category: "zones" },
   { name: "Ягодицы", price: 20, duration: 10, category: "zones" },
-  { name: "Глубокое бикини (мужское)", price: 45, duration: 25, category: "zones" },
   { name: "Все тело", price: 160, duration: 120, category: "complexes" },
   { name: "К 1 (подмышки + глубокое бикини)", price: 40, duration: 25, category: "complexes" },
   { name: "К 1 для мужчин ( подмышки-глубокое бикини)", price: 55, duration: 35, category: "complexes" },
@@ -34,6 +33,7 @@ const Services = () => {
   const [openAccountModal, setOpenAccountModal] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // Состояние для бургер-меню
   const [category, setCategory] = useState("zones");
+  //const [category, setCategory] = useState("zones");
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("");
   const [filterBy, setFilterBy] = useState("");
@@ -56,24 +56,24 @@ const Services = () => {
     }
     setOpenAccountModal(false);
   };
-
-  // Фильтрация списка по категории и поисковому запросу
-  const filteredServices = allServices.filter(service =>
-    service.category === category &&
-    service.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  // Применение сортировки
-  const sortedServices = [...filteredServices].sort((a, b) => {
-    if (sortBy === "price") return a.price - b.price;
-    if (sortBy === "duration") return a.duration - b.duration;
-    return 0;
+  const filteredServices = allServices.filter(service => {
+    return service.category.includes(category) && 
+           service.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
-  // Применение фильтра
+  console.log(filteredServices)
+  const sortedServices = [...filteredServices].sort((a, b) => {
+      if (sortBy === "price") return a.price - b.price;
+      if (sortBy === "duration") return a.duration - b.duration;
+      return 0;
+  });
+  console.log(sortedServices)
   const finalServices = filterBy
-    ? sortedServices.filter(service => service.name.toLowerCase().includes(filterBy.toLowerCase()))
-    : sortedServices;
+      ? sortedServices.filter(service => service.name.toLowerCase().includes(filterBy.toLowerCase()))
+      : sortedServices;
+  console.log(finalServices)
+   // const totalPrice = selectedServices.reduce((sum, s) => sum + s.price, 0);
+   // const totalDuration = selectedServices.reduce((sum, s) => sum + s.duration, 0);
 
   return (
     <div className="header">
@@ -155,39 +155,22 @@ const Services = () => {
             </Select>
           </FormControl>
         </div>
-        <div className="toggle-buttons1">
-        <ToggleButtonGroup
-          className="toggle-buttons"
-          value={category}
-          exclusive
-          onChange={(_, newValue) => setCategory(newValue || category)}
-        >
-          <div className="zones">
-          <ToggleButton value="zones">Зоны отдельно</ToggleButton>
-          </div>
-          <div className="complexes">
-          <ToggleButton value="complexes">Комплексы</ToggleButton>
-          </div>
-        </ToggleButtonGroup>
-        </div>
-
-        <h2 className="section-title">{category === "zones" ? "Зоны отдельно" : "Комплексы"}</h2>
-
+        
         <div className="service-list">
           {finalServices.length > 0 ? (
-            finalServices.map((service, index) => (
-              <div key={index} className="service-card">
+            finalServices.map((service) => (
+              <div key={`${service.name}-${service.category}`} className="service-card">
                 <div className="service-info">
                   <div className="service-name">{service.name}</div>
                   <div className="service-details">{service.price} BYN • {service.duration} м</div>
                 </div>
-                <Button variant="contained" className="select-button1">Выбрать</Button>
               </div>
             ))
           ) : (
             <p>Нет доступных услуг</p>
           )}
         </div>
+
       </div>
     </div>
   );

@@ -48,7 +48,7 @@ background: linear-gradient(178.43deg, rgb(2, 69, 49) 0%,rgb(33, 142, 126) 100%)
   background: white;
   left: 750px;
   top: 100px;
-  z-index: 2;
+  z-index: 10;
 }
 .account-modal h3{
   left: 140px;

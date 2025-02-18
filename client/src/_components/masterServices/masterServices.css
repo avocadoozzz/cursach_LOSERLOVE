@@ -1,4 +1,4 @@
-.masters-title2 {
+.masters-title3 {
     font-size: 20px;
     margin-bottom: 10px;
     top: 1px;
@@ -7,7 +7,7 @@
     left: 40%;
     width: 150px;
 }
-.menu-button123 {
+.menu-button1234 {
     color: #000;
     padding: 10px 20px;
     border: none;
@@ -19,7 +19,7 @@
     position: relative;
     top: -10px;
 }
-.nr-lang-menu2 {
+.nr-lang-menu3 {
     position: absolute;
     top: 70px;
     background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
@@ -30,11 +30,11 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
-    width: 300px;
-    height: 300px;
-    left: 50%;
+    width: 500px;
+    height: 500px;
+    left: 55%;
 }
- .nr-lang-menu2 .MuiIconButton-root {
+ .nr-lang-menu3 .MuiIconButton-root {
     width: 60px;
     top: -35.42%;
     left: 40px;
@@ -47,36 +47,36 @@
     width: 10%;
 }
  
-  .menu-button111 {
+  .menu-button1111 {
     color: #000;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 40px;
     border-radius: 5px;
     transition: 0.3s;
     left: -90px;
     position: relative;
     top: 20px;
   }
-  .menu-button222 {
+  .menu-button2222 {
     color: #000;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 40px;
     border-radius: 5px;
     transition: 0.3s;
     left: -90px;
     position: relative;
     top: 50px;
   }
-  .menu-button333 {
+  .menu-button3333 {
     color: #000;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 40px;
     border-radius: 5px;
     transition: 0.3s;
     left: -90px;
@@ -92,12 +92,12 @@
     left: -180%;
     top: -15px;
 }
-.burger-icon2 {
+.burger-icon3 {
     font-size: 24px;
     cursor: pointer;
     top: 20px;
     position: relative;
-    left: 470%;
+    left: 1600%;
 }
 .btn-open-menu2 img {
     width: 35px;
@@ -153,7 +153,7 @@ background: rgb(255, 255, 255);
 .sort-select {
 min-width: 150px;
 }
-.toggle-buttons1 {
+/*.toggle-buttons1 {
     width: 60%;
     z-index: 3;
     position: relative;
@@ -181,7 +181,7 @@ border-radius: 16px !important;
 background: rgb(255, 255, 255);
 z-index: 3;
 font-size: 12px;
-}
+}*/
 
 .toggle-text {
 font-size: 18px;
@@ -199,43 +199,378 @@ z-index: 9;
 .Mui-selected {
 background-color: rgba(25, 118, 210, 0.2) !important;
 }
-
-.service-list {
-display: flex;
-flex-direction: column;
-gap: 10px;
+.master-name12 {
+    font-size: 1.5rem;
+    left: 25px;
+    position: relative;
+    width: 20%;
+    top: -10px;
+}
+.master-name11 {
+    font-size: 1.5rem;
+    left: 25px;
+    position: relative;
+    top: -29px;
+    width: 20%;
+}
+.master-card1 {
+    position: absolute;
+    width: 80%;
+    height: 86px;
+    left: 8.9%;
+    top: 254.23%;
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+}
+.section-title1 {
+    position: absolute;
+    width: 73.14px;
+    height: 19.08px;
+    left: 1.84%;
+    top: -0.06%;
+    color: rgb(51, 51, 51);
+}
+.list {
+    position: absolute;
+    width: 80%;
+    height: 1800px;
+    left: 8.9%;
+    top: 500.32%;
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+}
+.service-list1 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    top: 50px;
+    position: relative;
 }
 
-.service-card {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px;
-border: 1px solid #ddd;
-border-radius: 8px;
+.service-card1 {
+    align-items: center;
+    border-radius: 8px;
+    height: 100px;
 }
 
 .service-info {
 flex-grow: 1;
 }
 
-.service-name {
-font-size: 16px;
-font-weight: bold;
+.service-name1 {
+    font-size: 16px;
+    font-weight: bold;
+    left: 8%;
+    position: relative;
+    top: -47px;
+    width: 70%;
 }
 
-.service-details {
-font-size: 14px;
-color: gray;
+.service-details1 {
+    font-size: 14px;
+    color: gray;
+    position: relative;
+    top: -20px;
 }
 
-.select-button1 {
-background-color:rgb(8, 85, 65) !important;
-color: white !important;
-z-index: 3;
+.select-button11 {
+    background-color: rgb(8, 85, 65) !important;
+    color: white !important;
+    z-index: 3;
+    top: -45px;
+    left: 85% !important;
+    border-radius: 20%;
+}
+.service-category1{
+    top: -45px;
+    position: relative;
+    left: 80px;
+}
+@media (max-width: 1220px) {
+    .nr-lang-menu3 {
+        position: absolute;
+        top: 70px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        width: 400px;
+        height: 400px;
+        left: 55%;
+    }
+    .burger-icon3 {
+        font-size: 24px;
+        cursor: pointer;
+        top: 20px;
+        position: relative;
+        left: 1200%;
+    }
+    .service-name1 {
+        font-size: 16px;
+        font-weight: bold;
+        left: 12%;
+        position: relative;
+        top: -47px;
+        width: 70%;
+    }
+}
+@media (max-width: 992px) {
+    .nr-lang-menu3 {
+        position: absolute;
+        top: 70px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        width: 400px;
+        height: 400px;
+        left: 45%;
+    }
+    .burger-icon3 {
+        font-size: 24px;
+        cursor: pointer;
+        top: 20px;
+        position: relative;
+        left: 1000%;
+    }
+    .select-button11 {
+        background-color: rgb(8, 85, 65) !important;
+        color: white !important;
+        z-index: 3;
+        top: -45px;
+        left: 75% !important;
+        border-radius: 20%;
+    }
+    .service-name1 {
+        font-size: 16px;
+        font-weight: bold;
+        left: 17%;
+        position: relative;
+        top: -47px;
+        width: 50%;
+    }
+}
+@media (max-width: 811px) {
+    .nr-lang-menu3 {
+        position: absolute;
+        top: 70px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        width: 330px;
+        height: 330px;
+        left: 35%;
+    }
+    .burger-icon3 {
+        font-size: 24px;
+        cursor: pointer;
+        top: 20px;
+        position: relative;
+        left: 700%;
+    }
+    .menu-button1111 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 30px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: 20px;
+    }
+    .menu-button2222 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 30px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: 50px;
+    }
+    .menu-button3333 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 30px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -90px;
+        position: relative;
+        top: 80px;
+    }
 }
 
-  
+@media (max-width: 635px) {
+    .nr-lang-menu3 {
+        position: absolute;
+        top: 70px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 10;
+        width: 330px;
+        height: 330px;
+        left: 25%;
+    }
+    .burger-icon3 {
+        font-size: 24px;
+        cursor: pointer;
+        top: 20px;
+        position: relative;
+        left: 300%;
+    }
+}
+
+@media (max-width: 507px) {
+    .nr-lang-menu3 {
+        position: absolute;
+        top: 70px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 10;
+        width: 330px;
+        height: 330px;
+        left: 15%;
+    }
+    .burger-icon3 {
+        font-size: 24px;
+        cursor: pointer;
+        top: 20px;
+        position: relative;
+        left: 500%;
+    }
+    .select-button11 {
+        background-color: rgb(8, 85, 65) !important;
+        color: white !important;
+        z-index: 3;
+        top: -45px;
+        left: 65% !important;
+        border-radius: 20%;
+    }
+}
+
+@media (max-width: 445px) {
+    .nr-lang-menu3 {
+        position: absolute;
+        top: 70px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 10;
+        width: 330px;
+        height: 330px;
+        left: 5%;
+    }
+    .burger-icon3 {
+        font-size: 24px;
+        cursor: pointer;
+        top: 20px;
+        position: relative;
+        left: 500%;
+    }
+    .select-button11 {
+        background-color: rgb(8, 85, 65) !important;
+        color: white !important;
+        z-index: 3;
+        top: -45px;
+        left: 65% !important;
+        border-radius: 20%;
+    }
+    .service-name1 {
+        font-size: 14px;
+        font-weight: bold;
+        left: 17%;
+        position: relative;
+        top: -47px;
+        width: 85%;
+    }
+    .service-category1 {
+        top: -45px;
+        position: relative;
+        left: 80px;
+        width: 150px;
+    }
+}
+@media (max-width: 386px) {
+    .nr-lang-menu3 {
+        position: absolute;
+        top: 70px;
+        background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 10;
+        width: 260px;
+        height: 260px;
+        left: 1%;
+    }
+    .menu-button1111 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -60px;
+        position: relative;
+        top: 20px;
+    }
+    .menu-button2222 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -60px;
+        position: relative;
+        top: 50px;
+    }
+    .menu-button3333 {
+        color: #000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        left: -60px;
+        position: relative;
+        top: 80px;
+    }
+    .select-button11{
+        left: 10px;
+    }
+}
 @media (max-width: 769px) {
     .masters-title2 {
         font-size: 20px;
@@ -454,7 +789,7 @@ z-index: 3;
     color: gray;
   }
   
-  .select-button1 {
+  .select-button11 {
     background-color:rgb(8, 85, 65) !important;
     color: white !important;
     z-index: 3;
@@ -690,7 +1025,7 @@ z-index: 3;
             position: relative;
             width: 10%;
         }
-        .nr-lang-menu2 {
+        .nr-lang-menu3 {
             position: absolute;
             top: 70px;
             background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
@@ -705,6 +1040,11 @@ z-index: 3;
             height: 280px;
             left: 12%;
         }
+        .select-button11 {
+            background-color:rgb(8, 85, 65) !important;
+            color: white !important;
+            z-index: 3;
+          }
 }
 @media (max-width: 355px) {
     .masters-title2 {
@@ -751,7 +1091,7 @@ z-index: 3;
             position: relative;
             width: 10%;
         }
-        .nr-lang-menu2 {
+        .nr-lang-menu3 {
             position: absolute;
             top: 70px;
             background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
@@ -762,8 +1102,8 @@ z-index: 3;
             align-items: center;
             justify-content: center;
             z-index: 10;
-            width: 280px;
-            height: 280px;
+            width: 260px;
+            height: 260px;
             left: 2%;
         }
 }

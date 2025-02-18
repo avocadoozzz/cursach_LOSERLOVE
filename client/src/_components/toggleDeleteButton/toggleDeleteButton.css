@@ -1,0 +1,125 @@
+.delete-button {
+    color: red;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .delete-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .select-button1 {
+    background-color:rgb(8, 85, 65) !important;
+    color: white !important;
+    z-index: 2;
+    transition: background-color 0.3s ease-in-out;
+    }
+  .select-button1:hover {
+    background-color: #115293;
+  }
+  .service-card10 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    top: 220px;
+    position: relative;
+    left: 90%;
+    width: 95px;
+}
+.Dialog{
+    top: 550px;
+    position: relative;
+    opacity: 1;
+    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiPaper-root{
+top: -850px;
+position: relative;
+--Paper-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+  .continue-button {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .continue-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .dialog-box {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .dialog-box p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .close-button {
+    color: #d32f2f;
+  }
+  
+  .close-button:hover {
+    background-color: rgba(211, 47, 47, 0.1);
+  }
+  
+  .proceed-button {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .proceed-button:hover {
+    background-color: #e68900;
+  }
+  .toggle-buttons1 {
+    width: 60%;
+    z-index: 3;
+    position: relative;
+    left: -1%;
+    height: 60px;
+    top: 149px;
+}
+.section-title {
+  position: relative;
+  width: 193.14px;
+  height: 19.08px;
+  left: 1.84%;
+  top: 170px;
+  color: rgb(51, 51, 51);
+}
+.zones button {
+position: absolute;
+width: 135px;
+height: 32px;
+left: 2.57%;
+border-radius: 16px !important;
+background: rgb(8, 85, 65) ;
+z-index: 3;
+font-size: 12px;
+}
+.complexes button{
+position: absolute;
+width: 107px;
+height: 32px;
+left: 37%;
+border-radius: 16px !important;
+background: rgb(255, 255, 255);
+z-index: 3;
+font-size: 12px;
+}
+
+.toggle-text {
+font-size: 18px;
+font-weight: bold;
+text-transform: none;
+padding: 10px 20px;
+border-radius: 8px;
+}
+.service-list11 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index:1 ;
+  position: relative;
+  }

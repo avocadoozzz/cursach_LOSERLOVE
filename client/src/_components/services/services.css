@@ -153,7 +153,7 @@ background: rgb(255, 255, 255);
 .sort-select {
 min-width: 150px;
 }
-.toggle-buttons1 {
+/*.toggle-buttons1 {
     width: 60%;
     z-index: 3;
     position: relative;
@@ -181,7 +181,7 @@ border-radius: 16px !important;
 background: rgb(255, 255, 255);
 z-index: 3;
 font-size: 12px;
-}
+}*/
 
 .toggle-text {
 font-size: 18px;
@@ -204,6 +204,8 @@ background-color: rgba(25, 118, 210, 0.2) !important;
 display: flex;
 flex-direction: column;
 gap: 10px;
+z-index: 3;
+position: relative;
 }
 
 .service-card {
@@ -213,6 +215,8 @@ align-items: center;
 padding: 15px;
 border: 1px solid #ddd;
 border-radius: 8px;
+top: 150px;
+position: relative;
 }
 
 .service-info {

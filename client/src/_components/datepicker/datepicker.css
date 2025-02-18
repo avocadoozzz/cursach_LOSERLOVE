@@ -1,0 +1,12 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    transition: background 0.3s;
+  }
+ .one1 {
+    position: relative;
+    top: 100px;
+}

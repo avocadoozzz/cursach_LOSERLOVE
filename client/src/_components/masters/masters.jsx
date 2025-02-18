@@ -114,7 +114,7 @@ const Masters = () => {
           {mastersList
             .filter((master) => master.name.toLowerCase().includes(search.toLowerCase()))
             .map((master) => (
-              <div key={master.id} className="master-card">
+              <div key={master.id} className="master-card4">
                 <p className="master-name">{master.name}</p>
                 <p className="master-name1">Мастер</p>
                 <button

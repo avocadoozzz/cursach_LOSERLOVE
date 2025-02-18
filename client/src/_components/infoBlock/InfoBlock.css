@@ -433,3 +433,12 @@ left: 1px;
     top: 90px;
 }
   }
+  @media (max-width: 365px) {
+    .main-image img {
+      width: 310px;
+      height: 310px;
+      position: absolute;
+      left: 1%;
+      top: 90px;
+  }
+  }
