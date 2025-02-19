@@ -34,7 +34,7 @@ const Headerdatepicker = () => {
     setOpenAccountModal(false);
   };
   return (
-    <div className="w-full h-screen bg-gray-100 flex flex-col items-center p-6">
+    <div className="one2">
       {/* Header */}
       <div className="header1 ">
       <IconButton onClick={() => navigate(-1)} sx={{ position: "absolute", top: 10, left: 10, color: "white" }}>

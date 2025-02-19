@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "lucide-react": "^0.474.0"
+    "lucide-react": "^0.474.0",
+    "react-calendar": "^5.1.0"
   }
 }

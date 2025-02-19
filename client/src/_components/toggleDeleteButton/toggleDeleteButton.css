@@ -20,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    top: 220px;
+    top: 20px;
     position: relative;
     left: 90%;
     width: 95px;
@@ -120,6 +120,7 @@ border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  z-index:1 ;
+  z-index:3 ;
   position: relative;
+  top: 200px;
   }
