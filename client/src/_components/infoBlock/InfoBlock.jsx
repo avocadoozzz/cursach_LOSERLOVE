@@ -18,7 +18,9 @@ const InfoBlock = () => {
       </div>
       <div className="info-block">
         <div className="main-">
-          <img src={soobshenieImage} alt="soobshenie" />
+        <a href="https://t.me/avocadooozzzz" target="_blank" rel="noopener noreferrer">
+    <img src={soobshenieImage} alt="soobshenie" />
+  </a>
         </div>
         <h2>LASER LOVE</h2>
         <p>📍 ул. Турова, д. 16</p>

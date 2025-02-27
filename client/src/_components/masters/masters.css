@@ -523,7 +523,7 @@
         top: 1px;
         font-size: 20px;
     }
-    .account-icon {
+    /*.account-icon {
         width: 60px;
         height: 60px;
         margin-right: 10px;
@@ -531,6 +531,16 @@
         position: relative;
         z-index: 1;
         top: 35px;
+        border-radius: 100%;
+    }*/
+    .account-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        left: 27%;
+        position: relative;
+        z-index: 1;
+        top: 115px;
         border-radius: 100%;
     }
     .search-icon {
@@ -701,6 +711,16 @@
         justify-content: center;
         z-index: 3;
     }
+    .account-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        left: 22%;
+        position: relative;
+        z-index: 1;
+        top: 115px;
+        border-radius: 100%;
+    }
 }
 @media (max-width: 525px) {
     .masters-search {
@@ -759,7 +779,7 @@
         top: -30px;
         position: relative;
     }
-    .account-icon {
+    /*.account-icon {
         width: 50px;
         height: 50px;
         margin-right: 10px;
@@ -767,6 +787,16 @@
         position: relative;
         z-index: 1;
         top: 16px;
+        border-radius: 100%;
+    }*/
+    .account-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        left: 20%;
+        position: relative;
+        z-index: 1;
+        top: 96px;
         border-radius: 100%;
     }
     .search-icon {
@@ -920,7 +950,7 @@
         position: relative;
         top: -30px;
     }
-    .account-icon {
+   /* .account-icon {
         width: 60px;
         height: 60px;
         margin-right: 10px;
@@ -928,6 +958,16 @@
         position: relative;
         z-index: 1;
         top: 15px;
+        border-radius: 100%;
+    }*/
+    .account-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        left: 20%;
+        position: relative;
+        z-index: 1;
+        top: 85px;
         border-radius: 100%;
     }
 }
@@ -947,7 +987,7 @@
         position: relative;
         left: 150%;
     }
-    .account-icon {
+    /*.account-icon {
         width: 60px;
         height: 60px;
         margin-right: 10px;
@@ -955,6 +995,16 @@
         position: relative;
         z-index: 1;
         top: 15px;
+        border-radius: 100%;
+    }*/
+    .account-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        left: 21%;
+        position: relative;
+        z-index: 1;
+        top: 95px;
         border-radius: 100%;
     }
 }

@@ -26,3 +26,15 @@
     top: -15px;
     bottom: 0.81%;
    }
+
+   @media (max-width: 390px) { 
+   .masters-title22 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    top: 10px;
+    position: relative;
+    color: white;
+    left: 25%;
+    width: 150px;
+}
+   }

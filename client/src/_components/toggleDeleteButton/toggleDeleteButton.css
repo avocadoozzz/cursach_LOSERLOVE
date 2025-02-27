@@ -22,7 +22,7 @@
     padding: 15px;
     top: 20px;
     position: relative;
-    left: 90%;
+    left: 80%;
     width: 95px;
 }
 .Dialog{
@@ -124,3 +124,48 @@ border-radius: 8px;
   position: relative;
   top: 200px;
   }
+
+  @media (max-width: 769px) {
+  .service-card10 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    top: 20px;
+    position: relative;
+    left: 70%;
+    width: 95px;
+}
+  }
+  @media (max-width: 560px) {
+    .service-card10 {
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      top: 20px;
+      position: relative;
+      left: 65%;
+      width: 95px;
+  }
+    }
+    @media (max-width: 430px) {
+      .service-card10 {
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        top: 20px;
+        position: relative;
+        left: 60%;
+        width: 95px;
+    }
+      }
+  @media (max-width: 330px) {
+    .service-card10 {
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      top: 20px;
+      position: relative;
+      left: 55%;
+      width: 95px;
+  }
+    }

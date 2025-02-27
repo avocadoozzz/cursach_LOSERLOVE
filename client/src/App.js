@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter , Navigate } from 'react-router-dom';
 import Home from './assets/pages/Home/Home.jsx';
 import Services from './assets/pages/Services/Services.jsx';
 import Booking from './assets/pages/Booking/Booking.jsx';
@@ -9,17 +9,20 @@ import MasterServices from './assets/pages/MasterServices/MasterServices.jsx';
 import Login from './assets/pages/Auth/auth.jsx';
 import Register from './assets/pages/Register/Register.jsx';
 import Reviews from './assets/pages/Reviews/Reviews.jsx';
-//import Header from './_components/header/header.jsx';
-//import InfoBlock from './_components/infoBlock/InfoBlock.jsx';
-//import Review from './_components/review/Review.jsx';
-//import MapButton from './_components/mapButton/MapButton.jsx';
-//import ServicesList from './_components/servicesList/ServicesList.jsx';
-//import MasterCard from './_components/masterCard/MasterCard.jsx';
-//import Login from './_components/auth/auth.jsx';
+import ProfilePage from './assets/pages/ProfilePage/ProfilePage.jsx';
+
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    // Проверяем, есть ли данные о пользователе в localStorage
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
   return (
     <BrowserRouter>
     <Routes>
@@ -32,7 +35,7 @@ const App = () => {
         <Route path="/auth" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/reviews" element={<Reviews />} />
-        
+        <Route path="/profilePage" element={user ? <ProfilePage user={user} /> : <Navigate to="/register" />} />
       </Routes>
     </BrowserRouter>
   );

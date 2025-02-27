@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const { Pool } = require('pg');
 require('dotenv').config();
+const sequelize = require('./db')
 
 // Middleware для обработки JSON
 // app.use(cors());

@@ -2,14 +2,19 @@ import { useState } from "react";
 import { Calendar } from "react-calendar";// Импортируем календарь
 import "react-calendar/dist/Calendar.css"; // Подключаем стилиimport "./datepicker.css";
 import "./datepicker.css";
+import staffImage from "../../assets/img/header/staff.png";
+import { useNavigate } from "react-router-dom";
 
 const DatePicker = () => {
+  const navigate = useNavigate(); // Хук для перехода на главную страницу
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
   const [availableSlots, setAvailableSlots] = useState([]);
   const [filteredSlots, setFilteredSlots] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для модального окна
+      const [openAccountModal, setOpenAccountModal] = useState(false);
 
   // Доступные времена для разных дат
   const availableTimes = {
@@ -67,6 +72,17 @@ const filterSlots = (filter) => {
   setSelectedFilter(filter);
 };
 
+const handleTimeSelect = (time) => {
+  setSelectedTime(time);
+};
+const handleToggleAccountModal = () => {
+  setOpenAccountModal((prev) => !prev);
+};
+const closeModal = () => {
+  setIsModalOpen(false);
+  navigate("/");
+};
+
   return (
     <div className="one1">
       {/* Кнопки переключения месяца */}
@@ -102,7 +118,7 @@ const filterSlots = (filter) => {
         📅
       </button>
 
-      {/* Выпадающий календарь */}
+      {/* Выпадающий календарь*/ }
       {isCalendarOpen && (
         <div className="absolute mt-2 bg-white shadow-lg rounded-lg p-4 z-10">
           <Calendar
@@ -112,7 +128,7 @@ const filterSlots = (filter) => {
         </div>
       )}
 
-      {/* Выбранная дата */}
+      {/* Выбранная дата*/ }
       <p className="text-gray-700 font-bold mt-2">
   Выбрано: {selectedDate ? selectedDate.toLocaleDateString() : "Дата не выбрана"}
 </p>
@@ -121,37 +137,52 @@ const filterSlots = (filter) => {
   <div className="mt-2">
     <p className="text-gray-600">Доступное время:</p>
     <div className="flex gap-2 mt-1 flex-wrap">
-      {filteredSlots.map((time, index) => (
-        <button
-          key={index}
-          className={`bg-gray-100 px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-300 ${
-            selectedTime === time ? "bg-gray-300" : ""
-          }`}
-          onClick={() => setSelectedTime(time)} // Обновляем выбранное время
-        >
-          {time}
-        </button>
-      ))}
+    {filteredSlots.map((time, index) => (
+  <button
+    key={index}
+    className={`bg-gray-100 px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-300 ${
+      selectedTime === time ? "bg-gray-300" : ""
+    }`}
+    onClick={() => handleTimeSelect(time)} // Вызываем правильную функцию
+  >
+    {time}
+  </button>
+))}
+
     </div>
   </div>
 ) : (
   <p className="text-gray-500 mt-2">Нет доступного времени</p>
 )}
 
-
-      {/* Карточка с данными */}
-      <div className="bg-white p-4 rounded-lg shadow mt-4 w-80">
-        <p className="text-gray-700 font-bold">Есения</p>
-        <p className="text-gray-500">45.00 BYN • 25 мин</p>
-        <div className="mt-2 flex items-center">
-    {selectedTime ? (
-      <span className="bg-gray-100 px-3 py-1 rounded-lg text-gray-700">
-        {selectedTime}
-      </span>
-    ) : (
-            <span className="text-gray-500">Нет доступного времени</span>
-          )}
+      {/* Карточка с данными*/ }
+      <div className="dannue">
+        <img src={staffImage} className="account-icon12" />
+        <p className="text1">Есения</p>
+        <p className="text2">45.00 BYN • 25 мин</p>
+        <div className="mt-2">
+  {selectedTime ? (
+    <button className="bg" onClick={() => setIsModalOpen(true)} >
+      {selectedTime}
+    </button>
+  ) : (
+    <span className="text-gray-500">Нет доступного времени</span>
+  )}
+</div>
+        {isModalOpen && (
+        <div className="modal11">
+          <div className="modal-content11">
+          <button className="close-button11" onClick={() => setIsModalOpen(false)}>
+            &times;
+          </button>
+            <h2>Подтверждение записи</h2>
+            <p>Вы выбрали дату: {selectedDate?.toLocaleDateString("ru-RU")}</p>
+            <p>Мастер: Есения</p>
+            <p>Время: {selectedTime}</p>
+            <button onClick={closeModal}>ОК</button>
+          </div>
         </div>
+      )}
       </div>
     </div>
   );

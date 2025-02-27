@@ -2,6 +2,27 @@ body {
     font-family: "Arial", sans-serif;
     background-color: #f4f4f4;
   }
+  .modal-content11 {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    top: -350px;
+    width: 85%;
+    height: 250px;
+    z-index: 4;
+  }
+  .close-button11 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+}
  .one1 {
     position: relative;
     top: 20px;
@@ -94,7 +115,7 @@ z-index: 2;
   position: relative;
 }
 .icon {
-  left: -12%;
+  left: 37%;
   position: relative;
   top: 30px;
   background-color: white;
@@ -104,4 +125,405 @@ z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.dannue {
+  position: relative;
+  height: 142.6px;
+  left: 15.17%;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+  width: 70%;
+}
+.text1 {
+  color: #374151;
+  font-weight: bold;
+  width: 60.6px;
+  height: 36.6px;
+  left: 129.4px;
+  top: -63.5px;
+  position: relative;
+}
+.text2 {
+  color: #6B7280;
+  font-weight: bold;
+  width: 160.6px;
+  height: 36.6px;
+  left: 120px;
+  position: relative;
+  top: -80px;
+}
+.bg{
+  background:#f3f4f6;
+  padding-left: 0.75rem; padding-right: 0.75rem;
+  padding-top: 0.25rem; padding-bottom: 0.25rem;
+  border-radius: 0.5rem;
+  color:#374151;
+  left: -45%;
+  position: relative;
+  top: -80px;
+}
+.account-icon12 {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  left: -45%;
+  position: relative;
+  z-index: 1;
+  top: 9px;
+  border-radius: 100%;
+}
+@media (max-width: 1440px) { 
+  .icon {
+    left: 27%;
+    position: relative;
+    top: 30px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+.account-icon12 {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  left: -42%;
+  position: relative;
+  z-index: 1;
+  top: 9px;
+  border-radius: 100%;
+}
+}
+@media (max-width: 605px) { 
+  .icon {
+    left: 7%;
+    position: relative;
+    top: 30px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  height: 300px;
+  background: white;
+  border: 1px solid #a0a096;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  line-height: 1.125em;
+  left: 20%;
+  position: relative;
+}
+.account-icon12 {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  left: -32%;
+  position: relative;
+  z-index: 1;
+  top: 9px;
+  border-radius: 100%;
+}
+.bg {
+  background: #f3f4f6;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.5rem;
+  color: #374151;
+  left: -33%;
+  position: relative;
+  top: -80px;
+}
+.button-morning {
+  position: absolute;
+  width: 100px;
+  height: 34px;
+  left: 0.69%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.button-day {
+  position: absolute;
+  width: 100.3px;
+  height: 34px;
+  left: 23.74%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.button-evening {
+  position: absolute;
+  width: 100px;
+  height: 34px;
+  left: 46.83%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.button-night {
+  position: absolute;
+  width: 100px;
+  height: 34px;
+  left: 69.88%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+}
+@media (max-width: 500px) { 
+.button-morning {
+  position: absolute;
+  width: 70px;
+  height: 34px;
+  left: 0.69%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.button-day {
+  position: absolute;
+  width: 70.3px;
+  height: 34px;
+  left: 23.74%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.button-evening {
+  position: absolute;
+  width: 70px;
+  height: 34px;
+  left: 46.83%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.button-night {
+  position: absolute;
+  width: 70px;
+  height: 34px;
+  left: 69.88%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.react-calendar {
+  width: 300px;
+  max-width: 100%;
+  height: 300px;
+  background: white;
+  border: 1px solid #a0a096;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  line-height: 1.125em;
+  left: 20%;
+  position: relative;
+}
+}
+@media (max-width: 390px) { 
+  .icon {
+    left: 1%;
+    position: relative;
+    top: 30px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.react-calendar {
+  width: 280px;
+  max-width: 100%;
+  height: 300px;
+  background: white;
+  border: 1px solid #a0a096;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  line-height: 1.125em;
+  left: 15%;
+  position: relative;
+}
+.text1 {
+  color: #374151;
+  font-weight: bold;
+  width: 60.6px;
+  height: 36.6px;
+  left: 99.4px;
+  top: -63.5px;
+  position: relative;
+}
+.text2 {
+  color: #6B7280;
+  font-weight: bold;
+  width: 160.6px;
+  height: 36.6px;
+  left: 90px;
+  position: relative;
+  top: -80px;
+}
+}
+@media (max-width: 345px) { 
+  .button-night {
+    position: absolute;
+    width: 70px;
+    height: 34px;
+    left: 75.88%;
+    top: 5.66%;
+    bottom: 92.12%;
+    border-radius: 17px;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+.button-evening {
+  position: absolute;
+  width: 70px;
+  height: 34px;
+  left: 51.83%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.button-day {
+  position: absolute;
+  width: 70.3px;
+  height: 34px;
+  left: 27.74%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.button-morning {
+  position: absolute;
+  width: 70px;
+  height: 34px;
+  left: 2.69%;
+  top: 5.66%;
+  bottom: 92.12%;
+  border-radius: 17px;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.react-calendar {
+  width: 270px;
+  max-width: 100%;
+  height: 300px;
+  background: white;
+  border: 1px solid #a0a096;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  line-height: 1.125em;
+  left: 15%;
+  position: relative;
+}
+.text1 {
+  color: #374151;
+  font-weight: bold;
+  width: 60.6px;
+  height: 36.6px;
+  left: 89.4px;
+  top: -63.5px;
+  position: relative;
+}
+.text2 {
+  color: #6B7280;
+  font-weight: bold;
+  width: 160.6px;
+  height: 36.6px;
+  left: 80px;
+  position: relative;
+  top: -80px;
+}
 }

@@ -5,8 +5,9 @@ import langIcon from '../../assets/img/header/lang.png';
 import razlogIcon from '../../assets/img/header/razlog.png';
 import accountIcon from '../../assets/img/header/account.png';
 import "./header.css";
+import staffImage from "../../assets/img/header/staff.png";
 
-const Header = () => {
+const Header = ({ user }) => {
   const [openModal, setOpenModal] = useState(false);
   const [openAccountModal, setOpenAccountModal] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // Состояние для бургер-меню
@@ -15,7 +16,6 @@ const Header = () => {
   const handleToggleModal = () => {
     setOpenModal((prev) => !prev);
   };
-
   const handleToggleAccountModal = () => {
     setOpenAccountModal((prev) => !prev);
   };
@@ -58,6 +58,21 @@ const Header = () => {
           <IconButton onClick={handleToggleAccountModal} sx={{ color: "white" }}>
             <img src={accountIcon} alt="Account" width="40" height="40" />
           </IconButton>
+
+          <button 
+  onClick={user ? () => navigate("/profilePage") : null} 
+  disabled={!user} 
+  style={{ background: "transparent", border: "none", cursor: user ? "pointer" : "default" }}
+> 
+  <img 
+    src={staffImage} 
+    alt="Account" 
+    width="40" 
+    height="40" 
+    style={{ filter: user ? "hue-rotate(300deg)" : "hue-rotate(0deg)" }} 
+  />
+</button>
+
         </div>
       </div>
 
@@ -75,6 +90,10 @@ const Header = () => {
           <IconButton onClick={handleToggleAccountModal} sx={{ color: "white" }}>
             <img src={accountIcon} alt="Account" width="40" height="40" />
           </IconButton>
+
+          <button onClick={() => navigate("/register")}>
+        {user ? "Личный кабинет" : "Регистрация"}
+      </button>
 
           {/* Новые кнопки */}
           <div className="menu-button">

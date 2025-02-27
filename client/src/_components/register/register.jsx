@@ -14,6 +14,7 @@ const Register = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
+   const [user, setUser] = useState(null);
 
   const calculateAge = (birthDate) => {
     const today = new Date();
@@ -40,7 +41,13 @@ const Register = () => {
     setError('');
     setIsAuthenticated(true);
     navigate('/');
+
+    const newUser = { name };
+    localStorage.setItem("user", JSON.stringify(newUser));
+    setUser(newUser);
+    navigate("/profilePage");
   };
+
 
   const handleBookClick = () => {
     if (isAuthenticated) {
@@ -117,7 +124,6 @@ const Register = () => {
         <p className="auth-footer">
           Already have an account? <a href="../auth">Login</a>
         </p>
-        <button className="auth-button" onClick={handleBookClick}>Записаться</button>
       </div>
 
       {showModal && (
