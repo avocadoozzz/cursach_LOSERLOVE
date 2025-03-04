@@ -1,10 +1,13 @@
 const pool = require('../db/db');
+const { User} = require('../models/models');
 
 // Создание записи
 const createBooking = async (req, res) => {
-  const { userId, serviceId, masterId, date, time } = req.body;
+  
 
   try {
+
+    const { userId, serviceId, masterId, date, time } = req.body;
     await pool.query(
       'INSERT INTO bookings (user_id, service_id, master_id, booking_date, booking_time) VALUES ($1, $2, $3, $4, $5)',
       [userId, serviceId, masterId, date, time]

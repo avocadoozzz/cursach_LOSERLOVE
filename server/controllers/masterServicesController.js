@@ -1,9 +1,12 @@
 const pool = require('../db/db');
+const { masterService} = require('../models/models');
 
 // Получение услуг, предоставляемых мастером
 const getMasterServices = async (req, res) => {
-  const { masterId } = req.params;
+
   try {
+
+    const { masterId } = req.params;
     const result = await pool.query(
       'SELECT * FROM services WHERE master_id = $1',
       [masterId]

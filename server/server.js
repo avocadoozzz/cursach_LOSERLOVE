@@ -1,59 +1,37 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
-const { Pool } = require('pg');
 require('dotenv').config();
-const sequelize = require('./db')
+const express = require("express");
+const sequelize = require('./db/db');
+const models = require('./models/models');
+// Запуск сервера
+const PORT = process.env.PORT || 3000;
+const cors = require("cors");
+const app = express();
+const router = require('./routes/index')
 
+
+app.use(cors());
 // Middleware для обработки JSON
-// app.use(cors());
 app.use(express.json());
-// Разрешаем доступ с порта 3000
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-  })
-);
 
-// Создание пула подключений к базе данных PostgreSQL
-const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
+//app.use('/api',router)
+
+app.get('/' ,(req, res) => {
+  res.status(200).json({ message: "Запрашиваемый ресурс найден" });
 });
 
-// Проверка подключения к базе данных
-pool.connect((err) => {
-  if (err) {
-    console.error("Ошибка подключения к базе данных:", err.stack);
-  } else {
-    console.log("Подключение к базе данных установлено");
-  }
-});
 
 // API для получения информации о студии
-app.get('/api/studio', async (req, res) => {
+app.get('/api/home', async (req, res) => {
   try {
-    const result = await pool.query('SELECT * FROM studio_info LIMIT 1');
-    res.json(result.rows[0]);
+    const result = await models.authModels.findOne();  // Предположим, что у вас есть такая модель StudioInfo
+    res.json(result);
   } catch (error) {
     console.error(error);
     res.status(500).send('Server error');
   }
 });
 
-// API для получения списка услуг
-app.get("/api/services", async (req, res) => {
-  try {
-    const result = await pool.query("SELECT * FROM services");
-    res.json(result.rows);
-  } catch (error) {
-    console.error("Ошибка при получении списка услуг:", error.message);
-    res.status(500).send("Server error");
-  }
-});
+
 
 // Импорт маршрутов
 const authRoutes = require("./routes/authRoutes");
@@ -67,23 +45,28 @@ const serviceRoutes = require("./routes/serviceRoutes");
 const reviewsRoutes = require("./routes/reviewsRoutes");
 
 // Подключение маршрутов к серверу
-app.use("/api/auth.Api", authRoutes);
-app.use("/api/booking.Api", bookingRoutes);
-app.use("/api/masterServices.Api", masterServicesRoutes);
-app.use("/api/register", registerRoutes);
-app.use("/api/home", homeRoutes);
-app.use("/api/datePicker", datePickerRoutes);
-app.use("/api/master", masterRoutes);
-app.use("/api/service", serviceRoutes);
-app.use("/api/reviews", reviewsRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/booking', bookingRoutes);
+app.use('/api/masterServices', masterServicesRoutes);
+app.use('/api/register', registerRoutes);
+app.use('/api/home', homeRoutes);
+app.use('/api/datePicker', datePickerRoutes);
+app.use('/api/masters', masterRoutes);
+app.use('/api/services', serviceRoutes);
+app.use('/api/reviews', reviewsRoutes);
+app.use('/api', router);
 
-// Обработка необработанных маршрутов
-app.use((req, res) => {
-  res.status(404).send({ error: "Запрашиваемый ресурс не найден" });
-});
+const start = async () => {
+  try {
+      await sequelize.authenticate();
+      console.log('Соединение с базой данных успешно!');
+      await sequelize.sync(); 
+      app.listen(PORT, () => {
+          console.log(`Server running at http://localhost:${PORT}`);
+      });
+  } catch (e) {
+      console.error('Ошибка при подключении к базе данных:', e);
+  }
+};
 
-// Запуск сервера
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Сервер запущен на порту ${PORT}`);
-});
+start();

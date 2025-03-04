@@ -60,18 +60,18 @@ const Header = ({ user }) => {
           </IconButton>
 
           <button 
-  onClick={user ? () => navigate("/profilePage") : null} 
-  disabled={!user} 
-  style={{ background: "transparent", border: "none", cursor: user ? "pointer" : "default" }}
+  onClick={() => navigate(user ? "/profilePage" : "/register")} 
+  style={{ background: "transparent", border: "none", cursor: "pointer" }}
 > 
   <img 
     src={staffImage} 
     alt="Account" 
     width="40" 
     height="40" 
-    style={{ filter: user ? "hue-rotate(300deg)" : "hue-rotate(0deg)" }} 
+    style={{ filter: user ? "hue-rotate(300deg)" : "none" }} 
   />
 </button>
+
 
         </div>
       </div>

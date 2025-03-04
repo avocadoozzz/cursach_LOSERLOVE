@@ -4,6 +4,8 @@ import authImage from "../../assets/img/auth.png";
 import googleImage from "../../assets/img/google.png";
 import appleImage from "../../assets/img/apple.png";
 import "./register.css";
+import { registerUser } from '../../slices/userSlice'; 
+import { useDispatch } from 'react-redux';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -15,6 +17,19 @@ const Register = () => {
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
    const [user, setUser] = useState(null);
+   const dispatch = useDispatch();
+   const [formData, setFormData] = React.useState({
+    name: '',
+    email:'',
+    dob: '',
+    password: '',
+});
+
+const handleChange = (e) => {
+  const { id, value } = e.target;
+  setFormData({ ...formData, [id]: value });
+};
+
 
   const calculateAge = (birthDate) => {
     const today = new Date();
@@ -27,7 +42,7 @@ const Register = () => {
     return age;
   };
 
-  const handleRegister = () => {
+  const handleRegister = async  () => {
     if (!name || !email || !password || !dob) {
       setError('Пожалуйста, заполните все поля');
       return;
@@ -37,15 +52,39 @@ const Register = () => {
       setError('Регистрация доступна только для лиц старше 16 лет');
       return;
     }
-
+    
     setError('');
     setIsAuthenticated(true);
     navigate('/');
-
     const newUser = { name };
-    localStorage.setItem("user", JSON.stringify(newUser));
-    setUser(newUser);
+setUser(newUser);
     navigate("/profilePage");
+    try {
+      const userData = {
+          name,
+          email, 
+          password,
+          dob,
+          role: 'user',
+      };
+      
+      localStorage.setItem('name', userData.name)
+      localStorage.setItem('email', userData.email)
+      localStorage.setItem('password', userData.password)
+      localStorage.setItem('dob', userData.dob)
+      localStorage.setItem('role', userData.role)
+      const result = await dispatch(registerUser(userData)).unwrap();
+      localStorage.setItem('client_id', result.client_id);
+      navigate('/profilePage')
+  } catch (error) {
+      console.error('Ошибка при регистрации:', error);
+      alert('Ошибка при регистрации. Попробуйте еще раз.'); 
+  }
+
+    //
+    //localStorage.setItem("user", JSON.stringify(newUser));
+    
+
   };
 
 
@@ -62,47 +101,41 @@ const Register = () => {
       <img src={authImage} alt="auth" />
       <div className="auth-container1">
         <h1 className="auth-title">Get Started Now</h1>
-        <form
-          className="auth-form"
-          onSubmit={(e) => {
-            e.preventDefault();
-            handleRegister();
-          }}
-        >
+        <form className="auth-form" onSubmit={(e) => { e.preventDefault();  handleRegister(); }} >
           <label className="auth-label" htmlFor="name">Name</label>
           <input
             id="name"
             type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={formData.name} onChange={handleChange}
             className="auth-input"
             placeholder="Enter your name"
+            required
           />
           <label className="auth-label" htmlFor="email">Email address</label>
           <input
             id="email"
             type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={formData.email} onChange={handleChange} 
             className="auth-input"
             placeholder="Enter your email"
+            required
           />
           <label className="auth-label" htmlFor="password">Password</label>
           <input
             id="password"
             type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={formData.password} onChange={handleChange} 
             className="auth-input"
             placeholder="Enter your password"
+            required
           />
           <label className="auth-label" htmlFor="dob">Date of Birth</label>
           <input
             id="dob"
             type="date"
-            value={dob}
-            onChange={(e) => setDob(e.target.value)}
+            value={formData.dob} onChange={handleChange} 
             className="auth-input"
+            required
           />
           {error && <p className="auth-error">{error}</p>}
           <button type="submit" className="auth-button">Sign Up</button>

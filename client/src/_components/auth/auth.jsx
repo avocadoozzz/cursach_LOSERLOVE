@@ -4,14 +4,17 @@ import authImage from "../../assets/img/auth.png";
 import googleImage from "../../assets/img/google.png";
 import appleImage from "../../assets/img/apple.png";
 import "./auth.css";
+import { useDispatch } from 'react-redux';
+import { loginUser } from '../../slices/userSlice'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 const navigate = useNavigate();
+const dispatch = useDispatch(); 
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
     if (!email || !password) {
       setError('Пожалуйста, заполните все поля');
       return;
@@ -21,6 +24,15 @@ const navigate = useNavigate();
     console.log('Login:', { email, password });
     navigate('/'); // Перенаправление на главную страницу
     // Здесь можно добавить логику авторизации (например, запрос к API)
+
+    const resultAction = await dispatch(loginUser({ email, password })).unwrap();
+            
+            // Сохранение данных пользователя в localStorage
+            localStorage.setItem('user', JSON.stringify(resultAction)); 
+            localStorage.setItem('client_id', resultAction.client_id);
+            localStorage.setItem('name', resultAction.name);
+            localStorage.setItem('role', resultAction.role)
+    
   };
 
   return (

@@ -1,4 +1,5 @@
 const pool = require('../db/db');
+const { master} = require('../models/models');
 
 // Получение списка мастеров
 const getMasters = async (req, res) => {

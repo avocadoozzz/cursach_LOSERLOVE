@@ -1,29 +1,28 @@
 const pool = require('../db/db');
+const { Service} = require('../models/models');
 
 // Получение списка услуг
 const getServices = async (req, res) => {
   try {
-    const result = await pool.query('SELECT * FROM services');
-    res.json(result.rows);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Ошибка сервера' });
-  }
+    const result = await Service.findAll(); // Получаем списка услуг
+    return res.json(result);
+} catch (error) {
+    console.error('Ошибка при получении списка услуг:', error);
+    return res.status(500).json({ message: 'Ошибка при получении списка услуг' });
+}
 };
 
 // Добавление услуги
-const addService = async (req, res) => {
-  const { name, price } = req.body;
+const create = async (req, res) => {
+
   try {
-    const result = await pool.query(
-      'INSERT INTO services (name, price) VALUES ($1, $2) RETURNING *',
-      [name, price]
-    );
-    res.status(201).json(result.rows[0]);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Ошибка сервера' });
-  }
+    const { name, description, time } = req.body;
+    const service = await Service.create({ name, description, time  });
+    return res.status(201).json(service);
+} catch (error) {
+  console.error('Error details:', error);
+  res.status(500).json({ error: 'Ошибка при добавлении услуги', details: error.message });
+}
 };
 
-module.exports = { getServices, addService };
+module.exports = { getServices, create };

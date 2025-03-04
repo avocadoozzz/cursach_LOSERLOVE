@@ -1,0 +1,23 @@
+const Router = require('express')
+const router = new Router()
+const authRoutes = require('./authRoutes')
+const bookingRoutes = require('./bookingRoutes')
+const datePickerRoutes = require('./datePickerRoutes')
+const homeRoutes = require('./homeRoutes')
+const masterRoutes = require('./masterRoutes')
+const masterServicesRoutes = require('./masterServicesRoutes')
+const registerRoutes = require('./registerRoutes')
+const reviewsRoutes = require('./reviewsRoutes')
+const serviceRoutes = require('./serviceRoutes')
+
+router.use('/auth', authRoutes)
+router.use('/booking',bookingRoutes)
+router.use('/datePicker',datePickerRoutes)
+router.use('/home',homeRoutes)
+router.use('/master',masterRoutes)
+router.use('/masterServices',masterServicesRoutes)
+router.use('/register',registerRoutes)
+router.use('/reviews',reviewsRoutes)
+router.use('/service',serviceRoutes)
+
+module.exports = router;

@@ -1,9 +1,10 @@
 const express = require('express');
-const { getServices, addService } = require('../controllers/serviceController');
+const { getServices, create } = require('../controllers/serviceController');
 
 const router = express.Router();
 
 router.get('/', getServices); // Получение списка услуг
-router.post('/', addService); // Добавление новой услуги
+router.post('/', create); // Добавление новой услуги
+router.get('/:id', getServices);
 
 module.exports = router;
