@@ -43,9 +43,10 @@ const datePickerRoutes = require("./routes/datePickerRoutes");
 const masterRoutes = require("./routes/masterRoutes");
 const serviceRoutes = require("./routes/serviceRoutes");
 const reviewsRoutes = require("./routes/reviewsRoutes");
+const routes = require('./routes');
 
 // Подключение маршрутов к серверу
-app.use('/api/auth', authRoutes);
+/*app.use('/api/auth', authRoutes);
 app.use('/api/booking', bookingRoutes);
 app.use('/api/masterServices', masterServicesRoutes);
 app.use('/api/register', registerRoutes);
@@ -54,7 +55,8 @@ app.use('/api/datePicker', datePickerRoutes);
 app.use('/api/masters', masterRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/reviews', reviewsRoutes);
-app.use('/api', router);
+*/
+app.use('/api', routes);
 
 const start = async () => {
   try {

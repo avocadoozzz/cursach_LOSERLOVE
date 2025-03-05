@@ -11,18 +11,16 @@ import Register from './assets/pages/Register/Register.jsx';
 import Reviews from './assets/pages/Reviews/Reviews.jsx';
 import ProfilePage from './assets/pages/ProfilePage/ProfilePage.jsx';
 
-
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+ // const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
-
+  //const dispatch = useDispatch();
   useEffect(() => {
-    // Проверяем, есть ли данные о пользователе в localStorage
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    }
-  }, []);
+    const storedUser = localStorage.getItem('user');
+//if (storedUser) {
+   //     dispatch(setCurrentUser(JSON.parse(storedUser))); 
+    })
+
   return (
     <BrowserRouter>
     <Routes>
@@ -35,7 +33,7 @@ const App = () => {
         <Route path="/auth" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/profilePage" element={user ? <ProfilePage user={user} /> : <Navigate to="/register" />} />
+        <Route path="/profilePage" element={<ProfilePage />} />
       </Routes>
     </BrowserRouter>
   );

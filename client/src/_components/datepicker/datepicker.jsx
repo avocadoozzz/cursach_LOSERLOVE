@@ -82,6 +82,40 @@ const closeModal = () => {
   setIsModalOpen(false);
   navigate("/");
 };
+const handleConfirmAppointment = async () => {
+  if (!selectedDate || !selectedTime) {
+    alert("Выберите дату и время");
+    return;
+  }
+
+  const appointmentData = {
+    user_id: 1, // Тут подставляй реальный ID пользователя (например, из состояния авторизации)
+    service_id: 1, // ID услуги, можно хранить в состоянии, если выбирается
+    master_id: 1, // ID мастера (например, "Есения" = 1)
+    date: selectedDate.toISOString().split("T")[0], // Форматируем дату YYYY-MM-DD
+    time: selectedTime, // Время
+  };
+
+  try {
+    const response = await fetch("http://localhost:5000/api/booking", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(appointmentData),
+    });
+
+    if (!response.ok) {
+      throw new Error("Ошибка при записи на услугу");
+    }
+
+    alert("Запись успешно создана!");
+    setIsModalOpen(false); // Закрываем модальное окно
+  } catch (error) {
+    console.error("Ошибка при создании записи:", error);
+    alert("Ошибка при создании записи");
+  }
+};
 
   return (
     <div className="one1">
@@ -179,7 +213,7 @@ const closeModal = () => {
             <p>Вы выбрали дату: {selectedDate?.toLocaleDateString("ru-RU")}</p>
             <p>Мастер: Есения</p>
             <p>Время: {selectedTime}</p>
-            <button onClick={closeModal}>ОК</button>
+            <button onClick={handleConfirmAppointment}>ОК</button>
           </div>
         </div>
       )}

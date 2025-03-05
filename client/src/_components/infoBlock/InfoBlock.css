@@ -408,7 +408,7 @@ left: 1px;
         position: absolute;
         width: 20px;
         height: 20px;
-        left: 200%;
+        left: 10%;
         top: 197px;
     }
     .info-block button {
@@ -421,7 +421,7 @@ left: 1px;
       cursor: pointer;
       font-size: 1rem;
       position: absolute;
-      left: 60%;
+      left: 50%;
       bottom: 26px;
       background: linear-gradient(166.07deg, rgb(3, 71, 51) 0%, rgb(32, 140, 124) 100%);
   }

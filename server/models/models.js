@@ -23,10 +23,6 @@ const User = sequelize.define('User', {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    is_master: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false,
-    },
     dateofbirth: {
             type: DataTypes.DATE,
             allowNull: false,
@@ -86,6 +82,32 @@ const Price = sequelize.define('Price', {
     tableName: 'prices',
 });
 
+const Master = sequelize.define('Master', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true, 
+        allowNull: false,    
+    },
+    username: { 
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+    },
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    }
+}, {
+    timestamps: true,
+    tableName: 'masters',
+});
+
 // Определение модели MasterService (Какие услуги предоставляет мастер)
 const MasterService = sequelize.define('MasterService', {
     id: {
@@ -97,7 +119,7 @@ const MasterService = sequelize.define('MasterService', {
     master_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: User,
+            model: Master,
             key: 'id',
         },
         allowNull: false,
@@ -135,7 +157,7 @@ const Appointment = sequelize.define('Appointment', {
     master_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: User,
+            model: Master,
             key: 'id',
         },
         allowNull: false,
@@ -192,7 +214,7 @@ const Review = sequelize.define('Review', {
     master_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: User,
+            model: Master,
             key: 'id',
         },
         allowNull: false,
@@ -221,7 +243,7 @@ const Availability = sequelize.define('Availability', {
     master_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: User,
+            model: Master,
             key: 'id',
         },
         allowNull: false,
@@ -249,7 +271,7 @@ const Availability = sequelize.define('Availability', {
 User.hasMany(Appointment, { foreignKey: 'client_id' });
 User.hasMany(Appointment, { foreignKey: 'master_id' });
 Appointment.belongsTo(User, { foreignKey: 'client_id', as: 'client' });
-Appointment.belongsTo(User, { foreignKey: 'master_id', as: 'master' });
+Appointment.belongsTo(Master, { foreignKey: 'master_id', as: 'master' });
 
 
 // Связь Appointment с Review
@@ -260,11 +282,11 @@ Review.belongsTo(Appointment, { foreignKey: 'appointment_id' });
 User.hasMany(Review, { foreignKey: 'client_id' });
 User.hasMany(Review, { foreignKey: 'master_id' });
 Review.belongsTo(User, { foreignKey: 'client_id', as: 'client' });
-Review.belongsTo(User, { foreignKey: 'master_id', as: 'master' });
+Review.belongsTo(Master, { foreignKey: 'master_id', as: 'master' });
 
 // Связь User с MasterService
-User.hasMany(MasterService, { foreignKey: 'master_id' });
-MasterService.belongsTo(User, { foreignKey: 'master_id' });
+Master.hasMany(MasterService, { foreignKey: 'master_id' });
+MasterService.belongsTo(Master, { foreignKey: 'master_id' });
 
 // Связь Service с MasterService
 Service.hasMany(MasterService, { foreignKey: 'service_id' });
@@ -278,6 +300,6 @@ Price.belongsTo(Service, { foreignKey: 'service_id' });
 
 // Связь User с Availability
 User.hasMany(Availability, { foreignKey: 'master_id' });
-Availability.belongsTo(User, { foreignKey: 'master_id' });
+Availability.belongsTo(Master, { foreignKey: 'master_id' });
 
-module.exports = { User, Service, Price, MasterService, Appointment, Review, Availability };
+module.exports = { User,Master , Service, Price, MasterService, Appointment, Review, Availability };

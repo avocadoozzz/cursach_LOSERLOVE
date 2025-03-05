@@ -308,3 +308,23 @@ font-size: 14px;
   z-index: 1;
 }
 }
+@media (max-width: 360px) {
+.reviews-container {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 83%;
+  height: 750px;
+  top: 2100px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+.review-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 3px 0;
+  width: 99%;
+  position: relative;
+}
+}

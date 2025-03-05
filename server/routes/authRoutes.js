@@ -1,10 +1,9 @@
 const express = require('express');
-const {  loginUser, checkAuth } = require('../controllers/authController');
+const {  loginUser} = require('../controllers/authController');
 
 const router = express.Router();
 
-
-router.post('/login', loginUser);
-router.get('/auth', checkAuth);
+// Маршрут для входа
+router.post('/', loginUser);
 
 module.exports = router;

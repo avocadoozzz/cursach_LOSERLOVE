@@ -5,15 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './app/store'
 import { Provider } from 'react-redux'
-import { AuthProvider } from './context/AuthContext';  // Импортируем AuthProvider
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <AuthProvider>  {/* Оборачиваем все приложение в AuthProvider */}
       <App/>
-      </AuthProvider>
     </Provider>
   </React.StrictMode>
 );

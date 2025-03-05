@@ -4,6 +4,7 @@ import MapButton from '../../../_components/mapButton/MapButton.jsx'
 import MasterCard from '../../../_components/masterCard/MasterCard.jsx'
 import Review from '../../../_components/review/Review.jsx'
 import ServicesList from '../../../_components/servicesList/ServicesList.jsx'
+//import AccountButton from '../../../_components/accountButton/accountButton.jsx'
 
 export default function RegistrationPage(){
     return(

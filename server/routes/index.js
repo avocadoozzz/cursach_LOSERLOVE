@@ -14,10 +14,10 @@ router.use('/auth', authRoutes)
 router.use('/booking',bookingRoutes)
 router.use('/datePicker',datePickerRoutes)
 router.use('/home',homeRoutes)
-router.use('/master',masterRoutes)
+router.use('/masters',masterRoutes)
 router.use('/masterServices',masterServicesRoutes)
 router.use('/register',registerRoutes)
 router.use('/reviews',reviewsRoutes)
-router.use('/service',serviceRoutes)
+router.use('/services',serviceRoutes)
 
 module.exports = router;

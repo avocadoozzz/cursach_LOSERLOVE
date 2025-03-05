@@ -5,7 +5,8 @@ import langIcon from '../../assets/img/header/lang.png';
 import razlogIcon from '../../assets/img/header/razlog.png';
 import accountIcon from '../../assets/img/header/account.png';
 import "./header.css";
-import staffImage from "../../assets/img/header/staff.png";
+import AccountButton from '../accountButton/accountButton.jsx'
+import "../accountButton/accountButton.css";
 
 const Header = ({ user }) => {
   const [openModal, setOpenModal] = useState(false);
@@ -32,11 +33,12 @@ const Header = ({ user }) => {
   return (
     <div className="nr-header nrs-gradient">
       <div className="nr-block">
+      <AccountButton/>
         <div className="nr-title-block">
           <div className="nr-title">LASER LOVE</div>
           <div className="nr-subtitle">Могилёв, ул. Турова , д.16</div>
         </div>
-
+      
         {/* Бургер-меню (кнопка) */}
         <div className="burger-menu">
           <IconButton onClick={() => setMenuOpen((prev) => !prev)} sx={{ color: "white" }}>
@@ -58,21 +60,6 @@ const Header = ({ user }) => {
           <IconButton onClick={handleToggleAccountModal} sx={{ color: "white" }}>
             <img src={accountIcon} alt="Account" width="40" height="40" />
           </IconButton>
-
-          <button 
-  onClick={() => navigate(user ? "/profilePage" : "/register")} 
-  style={{ background: "transparent", border: "none", cursor: "pointer" }}
-> 
-  <img 
-    src={staffImage} 
-    alt="Account" 
-    width="40" 
-    height="40" 
-    style={{ filter: user ? "hue-rotate(300deg)" : "none" }} 
-  />
-</button>
-
-
         </div>
       </div>
 
@@ -90,10 +77,6 @@ const Header = ({ user }) => {
           <IconButton onClick={handleToggleAccountModal} sx={{ color: "white" }}>
             <img src={accountIcon} alt="Account" width="40" height="40" />
           </IconButton>
-
-          <button onClick={() => navigate("/register")}>
-        {user ? "Личный кабинет" : "Регистрация"}
-      </button>
 
           {/* Новые кнопки */}
           <div className="menu-button">

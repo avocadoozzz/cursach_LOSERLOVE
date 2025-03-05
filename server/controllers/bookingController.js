@@ -1,22 +1,17 @@
 const pool = require('../db/db');
-const { User} = require('../models/models');
+const { Appointment} = require('../models/models');
 
 // Создание записи
-const createBooking = async (req, res) => {
-  
+const create = async (req, res) => {
 
   try {
-
-    const { userId, serviceId, masterId, date, time } = req.body;
-    await pool.query(
-      'INSERT INTO bookings (user_id, service_id, master_id, booking_date, booking_time) VALUES ($1, $2, $3, $4, $5)',
-      [userId, serviceId, masterId, date, time]
-    );
-    res.status(201).json({ message: 'Запись успешно создана' });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Ошибка при создании записи' });
-  }
+    const {  user_id, service_id, master_id, date, time } = req.body;
+    const user = await Appointment.create({ user_id, service_id, master_id, date, time  });
+    return res.status(201).json(user);
+} catch (error) {
+  console.error('Error details:', error);
+  res.status(500).json({ error: 'Ошибка при добавлении услуги', details: error.message });
+}
 };
 
 // Получение всех записей пользователя
@@ -35,4 +30,4 @@ const getUserBookings = async (req, res) => {
   }
 };
 
-module.exports = { createBooking, getUserBookings };
+module.exports = { create, getUserBookings };

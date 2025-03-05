@@ -230,7 +230,7 @@ background: rgb(255, 255, 255);
 }
 .burger-menu button{
   left: 800%;
-  top: -15px;
+  top: -75px;
 }
 .menu-button {
   color: #000;
@@ -290,20 +290,19 @@ background: rgb(255, 255, 255);
 @media (max-width: 657px) {
   .burger-menu button {
     left: 700%;
-    top: -15px;
-}
+top: -75px;}
 }
 @media (max-width: 561px) {
   .burger-menu button {
       left: 600%;
-      top: -15px;
+      top: -75px;
   }
 }
 
 @media (max-width: 501px) {
   .burger-menu button {
     left: 500%;
-    top: -15px;
+    top: -75px;
 }
 .nr-block .nr-title {
   position: absolute;
@@ -346,7 +345,7 @@ background: rgb(255, 255, 255);
 @media (max-width: 420px) {
   .burger-menu button {
     left: 400%;
-    top: -15px;
+    top: -75px;
 }
 .nr-block .nr-title {
   position: absolute;
@@ -383,6 +382,6 @@ background: rgb(255, 255, 255);
 @media (max-width: 336px) {
   .burger-menu button {
     left: 370%;
-    top: -15px;
+    top: -75px;
 }
 }
