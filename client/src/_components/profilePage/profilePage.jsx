@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import staffImage from "../../assets/img/header/staff.png";
 import { useNavigate } from "react-router-dom";
 import "./profilePage.css";
@@ -6,9 +6,23 @@ import "./profilePage.css";
 const ProfilePage = () => {
   const navigate = useNavigate(); // Хук для навигации
   const [selectedTab, setSelectedTab] = useState("profile"); // Состояние для активной вкладки
-  const [email, setEmail] = useState("nastya.buchmeleva2004@gmail.com");
-  const [name, setName] = useState("Анастасия");
+  const [email, setEmail] = useState("");
+  const [username, setName] = useState("");
 
+  useEffect(() => {
+    // Получаем данные пользователя из localStorage
+    const username = localStorage.getItem("username");
+    const userEmail = localStorage.getItem("email");
+
+    if (username && userEmail) {
+      setName(username);
+      setEmail(userEmail);
+    }else {
+      // Если данных нет, можно задать какие-то значения по умолчанию
+      setName("Имя пользователя не найдено");
+      setEmail("Email не найден");
+    }
+  }, []);
   // Данные истории записей и предстоящих визитов
   const appointments = [
     { date: "02.03.2025", time: "10:30", status: "Подтверждено" },
@@ -65,7 +79,7 @@ const ProfilePage = () => {
           <h3>Данные пользователя:</h3>
           <input
             type="text"
-            value={name}
+            value={username}
             onChange={(e) => setName(e.target.value)}
           />
           <input
