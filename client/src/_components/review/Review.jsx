@@ -15,7 +15,7 @@ const Reviews = () => {
   const handleShowMoreClick = () => {
     navigate("/reviews"); // Переход на страницу Reviews
   };
-
+  
   return (
     <div className="rect">  
     <div className="reviews-container">

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { IconButton } from "@mui/material";
-import "./masterServices.css";
 import langIcon from '../../assets/img/header/lang.png';
 import razlogIcon from '../../assets/img/header/razlog.png';
 import accountIcon from '../../assets/img/header/account.png';
 import avatarIcon from '../../assets/img/avatar.png';
+import "./masterServices.css";
 
 const allServices = [
   { name: "Арелолы", price: 10, duration: 5, category: "Зоны отдельно" },

@@ -3,7 +3,6 @@ const { Appointment} = require('../models/models');
 
 // Создание записи
 const create = async (req, res) => {
-
   try {
     const {  user_id, service_id, master_id, date, time } = req.body;
     const user = await Appointment.create({ user_id, service_id, master_id, date, time  });
@@ -17,7 +16,6 @@ const create = async (req, res) => {
 // Получение всех записей пользователя
 const getUserBookings = async (req, res) => {
   const { userId } = req.params;
-
   try {
     const result = await pool.query(
       'SELECT * FROM bookings WHERE user_id = $1',

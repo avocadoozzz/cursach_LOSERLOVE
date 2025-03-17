@@ -5,7 +5,6 @@ const { masterService} = require('../models/models');
 const getMasterServices = async (req, res) => {
 
   try {
-
     const { masterId } = req.params;
     const result = await pool.query(
       'SELECT * FROM services WHERE master_id = $1',

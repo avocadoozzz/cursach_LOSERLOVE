@@ -14,7 +14,6 @@ const getServices = async (req, res) => {
 
 // Добавление услуги
 const create = async (req, res) => {
-
   try {
     const { name, description, time } = req.body;
     const service = await Service.create({ name, description, time  });

@@ -1,5 +1,4 @@
 import React, { useState , useEffect } from "react";
-import staffImage from "../../assets/img/header/staff.png";
 import { useNavigate } from "react-router-dom";
 import "./profilePage.css";
 

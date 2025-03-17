@@ -15,7 +15,6 @@ const getReviews = async (req, res) => {
 
 // Добавление нового отзыва
 const addReview = async (req, res) => {
-
   try {
     const { client_id, master_id, rating, comment } = req.body;
     console.log(req.body); // Проверьте, что все поля присутствуют

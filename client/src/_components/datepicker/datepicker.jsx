@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Calendar } from "react-calendar";// Импортируем календарь
 import "react-calendar/dist/Calendar.css"; // Подключаем стилиimport "./datepicker.css";
-import "./datepicker.css";
 import staffImage from "../../assets/img/header/staff.png";
 import { useNavigate } from "react-router-dom";
+import "./datepicker.css";
 
 const DatePicker = () => {
   const navigate = useNavigate(); // Хук для перехода на главную страницу

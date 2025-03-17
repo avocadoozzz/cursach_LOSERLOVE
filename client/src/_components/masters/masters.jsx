@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./masters.css";
 import staffImage from "../../assets/img/header/staff.png";
 import searchImage from "../../assets/img/search.png";
 import { useNavigate } from "react-router-dom";
@@ -7,6 +6,7 @@ import { IconButton } from "@mui/material";
 import langIcon from '../../assets/img/header/lang.png';
 import razlogIcon from '../../assets/img/header/razlog.png';
 import accountIcon from '../../assets/img/header/account.png';
+import "./masters.css";
 
 const Masters = () => {
       const [openModal, setOpenModal] = useState(false);
