@@ -12,13 +12,10 @@ import Reviews from './assets/pages/Reviews/Reviews.jsx';
 import ProfilePage from './assets/pages/ProfilePage/ProfilePage.jsx';
 
 const App = () => {
- // const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
-  //const dispatch = useDispatch();
+
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
-//if (storedUser) {
-   //     dispatch(setCurrentUser(JSON.parse(storedUser))); 
     })
 
   return (
