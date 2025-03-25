@@ -23,7 +23,7 @@ app.get('/' ,(req, res) => {
 // API для получения информации о студии
 app.get('/api/home', async (req, res) => {
   try {
-    const result = await models.authModels.findOne();  // Предположим, что у вас есть такая модель StudioInfo
+    const result = await models.authModels.findOne();  
     res.json(result);
   } catch (error) {
     console.error(error);

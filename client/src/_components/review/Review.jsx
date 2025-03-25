@@ -22,7 +22,7 @@ const Reviews = () => {
       <div className="reviews-header">
         <h3>Отзывы</h3>
         <div className="header-buttons">
-          <button className="leave-review">Оставить отзыв</button>
+          <button className="leave-review" onClick={() => navigate("/reviews")}>Оставить отзыв</button>
           <button className="report">Пожаловаться</button>
         </div>
       </div>

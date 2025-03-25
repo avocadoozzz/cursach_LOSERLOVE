@@ -89,8 +89,8 @@ const handleConfirmAppointment = async () => {
   }
 
   const appointmentData = {
-    user_id: 1, // Тут подставляй реальный ID пользователя (например, из состояния авторизации)
-    service_id: 1, // ID услуги, можно хранить в состоянии, если выбирается
+    user_id: 2, // Тут подставляй реальный ID пользователя (например, из состояния авторизации)
+    service_id: 5, // ID услуги, можно хранить в состоянии, если выбирается
     master_id: 1, // ID мастера (например, "Есения" = 1)
     date: selectedDate.toISOString().split("T")[0], // Форматируем дату YYYY-MM-DD
     time: selectedTime, // Время

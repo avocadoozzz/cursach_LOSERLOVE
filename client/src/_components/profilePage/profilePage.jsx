@@ -7,11 +7,13 @@ const ProfilePage = () => {
   const [selectedTab, setSelectedTab] = useState("profile"); // Состояние для активной вкладки
   const [email, setEmail] = useState("");
   const [username, setName] = useState("");
+  const [userData, setUserData] = useState(null);
+
 
   useEffect(() => {
     // Получаем данные пользователя из localStorage
-    const username = localStorage.getItem("username");
-    const userEmail = localStorage.getItem("email");
+    const username = localStorage.getItem("username", userData?.name || "");
+    const userEmail = localStorage.getItem("email", userData?.email || "");
 
     if (username && userEmail) {
       setName(username);

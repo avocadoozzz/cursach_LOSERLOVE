@@ -14,17 +14,39 @@ const getReviews = async (req, res) => {
 };
 
 // Добавление нового отзыва
-const addReview = async (req, res) => {
+const create = async (req, res) => {
   try {
     const { client_id, master_id, rating, comment } = req.body;
     console.log(req.body); // Проверьте, что все поля присутствуют
-            const reviews = await Review.addReview({client_id, master_id, rating, comment });
+            const reviews = await Review.create({client_id, master_id, rating, comment });
             return res.status(201).json(reviews);
         } catch (error) {
             console.error('Ошибка при создании отзыва:', error);
             return res.status(500).json({ message: 'Ошибка при создании отзыва' });
         }
 };
+
+// Редактирование отзыва
+const updateReview = async (req, res) => {
+    try {
+      const { id } = req.params; // ID отзыва
+      const { rating, comment } = req.body; // Новые данные
+  
+      const review = await Review.findByPk(id);
+      if (!review) {
+        return res.status(404).json({ message: 'Отзыв не найден' });
+      }
+  
+      review.rating = rating || review.rating;
+      review.comment = comment || review.comment;
+      await review.save();
+  
+      return res.json(review);
+    } catch (error) {
+      console.error('Ошибка при обновлении отзыва:', error);
+      return res.status(500).json({ message: 'Ошибка при обновлении отзыва' });
+    }
+  };  
 
 // Удаление отзыва
 const deleteReview = async (req, res) => {
@@ -45,4 +67,4 @@ const deleteReview = async (req, res) => {
     return res.status(500).json({ message: 'Ошибка при удалении отзыва' });
 }
 }
-module.exports = { getReviews, addReview, deleteReview };
+module.exports = { getReviews, create, deleteReview, updateReview };

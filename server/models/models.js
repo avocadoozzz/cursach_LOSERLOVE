@@ -265,6 +265,31 @@ const Availability = sequelize.define('Availability', {
     tableName: 'availability',
 });
 
+const Promotion = sequelize.define('Promotion', {
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    discount: {
+      type: DataTypes.INTEGER, // Скидка в процентах
+      allowNull: true
+    },
+    startDate: {
+      type: DataTypes.DATE,
+      allowNull: false
+    },
+    endDate: {
+      type: DataTypes.DATE,
+      allowNull: false
+    }
+  }, {
+    timestamps: true
+  }); 
+  
 // Установление связей между моделями
 
 // Связь User с Appointment
